@@ -1,0 +1,161 @@
+.heading {
+    font-weight: bolder !important;
+    opacity: 0.5 !important;
+}
+
+.header-description {
+    width: 60%;
+}
+
+.foreword-description {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .header-description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .foreword-description {
+        width: 100%;
+    }
+}
+
+.heading-container {
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    .heading-container {
+        flex-direction: column;
+    }
+}
+
+.heading-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 576px) {
+    .heading-container-reverse {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.heading-icon img {
+    height: 80px !important;
+    width: 80px !important;
+    max-height: 80px !important;
+    max-width: 80px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 576px) {
+    .heading-icon img {
+        padding: 0;
+    }
+}
+
+#haze-dark-demo select,
+#haze-dark-demo textarea {
+    min-width: 100%;
+}
+
+#haze-responsive-demo {
+    position: absolute;
+    overflow-y: scroll;
+    container-type: inline-size;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#haze-responsive-demo::-webkit-scrollbar {
+    display: none;
+}
+
+#haze-responsive-range input[type='range'] {
+    width: calc(100% - 24px);
+    margin: 12px;
+}
+
+/* .wrapper>div {
+    flex: 1 1 150px;
+} */
+
+#haze-responsive-demo .code-content {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+#haze-responsive-demo .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#haze-responsive-demo .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#haze-responsive-demo .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@container (max-width: 700px) {
+    #haze-responsive-demo .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@container (max-width: 500px) {
+    #haze-responsive-demo .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#haze-responsive-range #sm,
+#haze-responsive-range #md,
+#haze-responsive-range #lg {
+    cursor: pointer;
+}
+
+#haze-responsive-range #sm {
+    width: 600px;
+}
+
+#haze-responsive-range #sm.active {
+    background-color: var(--accent);
+}
+
+#haze-responsive-range #md {
+    width: 190px;
+}
+
+#haze-responsive-range #md.active {
+    background-color: var(--accent);
+}
+
+#haze-responsive-range #lg {
+    width: calc(100% - 790px);
+}
+
+#haze-responsive-range #lg.active {
+    background-color: var(--accent);
+}
+
+#haze-responsive-demo-container {
+    display: contents;
+}
+
+#haze-responsive-demo-container-sibling {
+    z-index: -1;
+}

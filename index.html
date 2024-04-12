@@ -1,0 +1,1633 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/placeholder_light.png" alt="website logo" height="16px">
+
+    <link rel="stylesheet" href="src/css/haze/haze-plus.css">
+    <link rel="stylesheet" href="src/css/haze/haze-plus-plus.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="debug off">
+    <nav class="navbar fixed-top bg-main shadow-sm">
+        <div class="container nav-container">
+            <div class="container d-flex justify-content-between p-0">
+                <a href="#" class="d-flex" alt="website logo">
+                    <img class="nav-logo" src="img/placeholder_light.png" width="48px" alt="website logo"></a>
+                <button id="nav-toggle" class="nav-toggle">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapsed">
+                <div class="nav-list d-flex">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="docs/index.html">Docs</a>
+                    <a class="nav-link" href="demo/index.html">Demo</a>
+                    <a class="nav-link" href="#">Download</a>
+                    <a class="nav-icon" href="https://github.com/"><img src="img/placeholder_light.png" width="28px"
+                            alt="Git"></a>
+                    <a class="nav-icon" href="#"><img src="img/placeholder_light.png" width="28px" alt="Donate"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container text-center py-5 my-5">
+            <h1 class="header-title fw-bold mt-5">Envision bold.<br class="display-sm"> Design modern.<br>Develop
+                effortlessly.</h1>
+            <div class="container header-description my-4">
+                <p class="text-center">
+                    <b class="text-accent">HazeCSS</b> is a powerfull, extensible and lightweight framework designed for
+                    modern platforms.
+                    It offers a <b class="text-accent">ready-to-use</b> frontend components for rapid prototyping,
+                    flexible layout creation, and
+                    clean, minimalistic styling.
+                </p>
+            </div>
+            <div class="content-center">
+                <div class="d-flex">
+                    <a class="button primary" href="docs/index.html">Get Started</a>
+                    <a class="button" href="docs/index.html">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-xxl-3 col-md-6 col-sm-12 mb-4">
+                    <div class="bg-alt d-flex content-center rounded-3 shadow-sm p-3">
+                        <div class="icon"><img src="img/placeholder_light.png" width="28px"
+                                alt="Design to be responsive"></div>
+                        <p class="text-center">Designed to be responsive</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3  col-md-6 col-sm-12 mb-4">
+                    <div class="bg-alt d-flex content-center rounded-3 shadow-sm p-3">
+                        <div class="icon"><img src="img/placeholder_light.png" width="28px" alt="Modern and discreet">
+                        </div>
+                        <p class="text-center">Modern and discreet</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-md-6 col-sm-12 mb-4">
+                    <div class="bg-alt d-flex content-center rounded-3 shadow-sm p-3">
+                        <div class="icon"><img src="img/placeholder_light.png" width="28px"
+                                alt="Flexible and customizable"></div>
+                        <p class="text-center">Flexible and customizable</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-md-6 col-sm-12 mb-4">
+                    <div class="bg-alt d-flex content-center rounded-3 shadow-sm p-3">
+                        <div class="icon"><img src="img/placeholder_light.png" width="28px" alt="Simple and intuitive">
+                        </div>
+                        <p class="text-center">Simple and intuitive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-alt">
+        <div class="container text-center py-5 my-5">
+            <h1 class="header-title fw-bold">Reimagining Framework Modularity</h1>
+            <div class="container foreword-description my-5">
+                <p class="text-center">
+                    Traditional frameworks often promise ease of development, yet they fall short in addressing the
+                    diverse needs of modern web projects;
+                    I've designed Haze to address these complexities with a unique twist.
+                </p>
+                <p class="text-center">
+                    Haze breaks free from convention by offering a unique approach to modularity. Structured into three
+                    distinct flavors, Haze empowers developers at every stage of the website creation journey. Begin
+                    with <b class="text-accent">Haze</b>'s base framework, a minimalist, class-less solution that
+                    breathes life into HTML with clean, modern styles. Elevate your designs with <b
+                        class="text-accent">Haze+</b> for enhanced layout control and utility, or dive into the world of
+                    intricate design elements with <b class="text-accent">Haze++</b>.
+                </p>
+            </div>
+            <div class="container content-center text-start d-flex">
+                <div class="pe-3">
+                    <img src="img/placeholder_light.png" width="50px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap flex-column">
+                    <h4 class="m-0 p-0">Serban Elyan</h4>
+                    <p class="m-0 p-0">Creator of Haze CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Haze Base -->
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="heading-container">
+                <div class="heading-icon">
+                    <img src="img/placeholder_light.png" width="80px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <h1 class="m-0 p-0 w-100">Simple. Elegant. Effective.</h1>
+                    <p class="m-0 p-0 w-100">Seamless light and dark mode switching based on system preferences</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 my-3">
+                    <div class="container bg-light shadow-sm rounded-5 p-5">
+                        <form>
+                            <blockquote>
+                                Please note that an additional confirmation will be delivered via email
+                            </blockquote>
+                            <label for="name">Full name:</label>
+                            <input type="text" id="name" name="name" value="Brett Boehm">
+                            <label for="species">Chosen seats:</label>
+                            <input type="text" id="species" name="species" value="Randomply chosen" disabled>
+                            <label for="birthday">Reservation date:</label>
+                            <input type="date" id="birthday" name="birthday">
+                            <label for="time">Reservation time:</label>
+                            <input type="time" id="time" name="time">
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 content-center my-3">
+                    <div class="code-container shadow-sm rounded-5 overflow-hidden">
+                        <div class="code-header border-bottom">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">form</span>
+                                <span class="code attr-name">&nbsp;action</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"reserve.php"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">blockquote</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code text text-wrap">&emsp;&emsp;Please note that an additional
+                                    confirmation will be delivered via email</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">blockquote</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"name"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">Full name:</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"name"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"name"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Brett Boehm"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"species"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">Chosen seats:</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"seats"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"seats"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Randomly chosen"</span>
+                                <span class="code attr-name">&nbsp;disabled</span>
+                                <span class="code punctuation">/&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"date"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">Reservation date:</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"date"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"date"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"date"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"time"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">Reservation time:</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"time"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"time"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"time"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">/&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"submit"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Submit"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">form</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="heading-container-reverse">
+                <div class="heading-icon">
+                    <img src="img/placeholder_light.png" width="80px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap flex-row-reverse">
+                    <h1 class="m-0 p-0 w-100 text-end">Light or dark, the choice is yours.</h1>
+                    <p class="m-0 p-0 w-100 text-end">Seamless light and dark mode switching based on system preferences
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row swap-lg">
+                <div class="col-lg-7 col-md-12 my-3 content-center">
+                    <div class="code-container shadow-sm rounded-5">
+                        <div class="code-header border-bottom roudned-top">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code text text-wrap">&emsp;The activities take place between</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">time</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">09:00 GMT+1</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">time</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">time</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">17:00 GMT+1</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">time</span>
+                                <span class="code punctuation">&gt;&nbsp;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code text text-wrap">&emsp;every day of the week.</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code text text-wrap">&emsp;No activities are scheduled for the</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">time</span>
+                                <span class="code attr-name">&nbsp;datetime</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">&quot;2024-12-25 00:00&quot;</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code text text-wrap">&emsp;Christmas day</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">time</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">.</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <br>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">form</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                                Workshop:
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"checkbox"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"dev"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"dev"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Development Workshop"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"dev"</span>
+                                <span class="code punctuation">&gt;</span>
+                                Development Workshop
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span><br>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <br>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"checkbox"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"design"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"design"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Design Workshop"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"design"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text">Design Workshop</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <br>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"attendance_type"</span>
+                                <span class="code punctuation">&gt;</span>
+                                Attendance:
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">select</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"attendance_type"</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"attendance_type"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code indentation-1">&emsp;&emsp;</span>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">option</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"physical"</span>
+                                <span class="code punctuation">&gt;</span>
+                                Physical
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">option</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code indentation-1">&emsp;&emsp;</span>
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">option</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"online"</span>
+                                <span class="code punctuation">&gt;</span>
+                                Online
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">option</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">select</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <br>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">label</span>
+                                <span class="code attr-name">&nbsp;for</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"mentions"</span>
+                                <span class="code punctuation">&gt;</span>
+                                Additional mentions:
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">label</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">textarea</span>
+                                <span class="code attr-name">&nbsp;id</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"mentions"</span>
+                                <span class="code attr-name">&nbsp;name</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"mentions"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">textarea</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <br>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">br</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"row d-flex flex-wrap mb-3"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input </span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"button"</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"primary"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Submit"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"button"</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"secondary"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Cancel"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">input</span>
+                                <span class="code attr-name">&nbsp;type</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"button"</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"tertiary"</span>
+                                <span class="code attr-name">&nbsp;value</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"Reset"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">form</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 my-3">
+                    <div id="haze-dark-demo" class="container shadow-sm bg-light rounded-3 p-5">
+                        <p>The activities take place between <time>09:00 GMT+1</time> and <time>17:00 GMT+1</time> every
+                            day of the week. No activities are scheduled for the <time
+                                datetime="2024-12-25 00:00">Christmas
+                                day</time>.</p>
+
+                        <form>
+                            <label>Workshop:</label><br>
+                            <input type="checkbox" id="dev" name="dev" value="Development Workshop">
+                            <label for="dev">Development Workshop</label><br>
+                            <input type="checkbox" id="design" name="design" value="Design Workshop">
+                            <label for="design">Design Workshop</label><br><br>
+
+                            <label for="attendance_type">Attendance:</label>
+                            <select name="attendance_type" id="attendance_type">
+                                <option value="physical">Physical</option>
+                                <option value="online">Online</option>
+                            </select>
+                            <label for="mentions">Additional mentions:</label>
+                            <textarea id="mentions" name="mentions" class="w-100"></textarea>
+                            <br>
+                            <div class="d-flex flex-wrap mb-3">
+                                <input type="button" class="primary" onclick="alert('You\'ve unlocked a secret!')"
+                                    value="Submit">
+                                <input type="button" class="secondary" onclick="alert('YOu\'re a curious one, I see!')"
+                                    value="Cancel">
+                                <input type="button" class="tertiary" onclick="alert('Exploration is its own reward!')"
+                                    value="Reset">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="py-3">
+                        <div class="container shadow-sm bg-light rounded-3 p-5">
+                            <blockquote>The mode change isn't just about altering the background; it harmonizes all
+                                content to
+                                reflect the desired theme, ensuring a cohesive and immersive user experience.
+                            </blockquote>
+                            <div class="d-flex flex-wrap mb-3">
+                                <input type="button" class="primary" onclick="hazeDarkDemo()" value="Give it a try">
+                                <a class="button secondary" href="docs/index.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-alt">
+        <div class="container content-center d-flex flex-column py-5 mb-5">
+            <h1 class="text-center">Found what you were looking for?</h1>
+            <p class="text-center mb-4">If the the simplicity, style and customizability have already convinced you,
+                give it a try!<br class="hide-sm">
+                Don't forget there's more where this one came from!</p>
+            <div class="d-flex">
+                <a class="button primary" href="docs/index.html">See Docs</a>
+                <a class="button" href="docs/index.html">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Haze Plus -->
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="heading-container">
+                <div class="heading-icon">
+                    <img src="img/placeholder_light.png" width="80px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <h1 class="m-0 p-0 w-100">Build anything you want, how you want.</h1>
+                    <p class="m-0 p-0 w-100">With such a powerfull layout customization, your imagination is your only
+                        limit</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row content-center">
+                <div class="col-lg-5 col-md-12 my-3">
+                    <div class="container hide-lg shadow-sm bg-light rounded-3 p-5">
+                        <div class="row">
+                            <blockquote>
+                                This demo works better on larger screens. On mobile, you're only gonna see a stack of
+                                blocks. Make sure to check this page again once you're on desktop. Untill then, here's a
+                                smaller stack of blocks so you don't get bored. Enjoy!
+                            </blockquote>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">2</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container display-lg shadow-sm bg-light rounded-3 p-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">2</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">2</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">3</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="container bg p-2 px-3 mb-4">
+                                    <p class="text-center">4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">1</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">2</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">3</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">4</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">5</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                                <div class="container bg py-2 px-3 mb-3">
+                                    <p class="text-center">6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 my-3">
+                    <div class="code-container shadow-sm rounded-5">
+                        <div class="code-header border-bottom roudned-top">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"row"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">1</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"row"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-md-6 col-sm-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">1</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-md-6 col-sm-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">2</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"row"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-lg-4 col-md-12 col-sm-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">1</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-lg-4 col-md-12 col-sm-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">2</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"col-lg-4 col-md-12 col-sm-12"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"container bg p-2 px-3 mb-4"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&emsp;&lt;</span>
+                                <span class="code element">p</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"text-center"</span>
+                                <span class="code punctuation">&gt;</span>
+                                <span class="code text text-wrap">3</span>
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">p</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Yes, I'm aware this is not '.flex-row-reverse' -->
+
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="heading-container">
+                <div class="heading-icon">
+                    <img src="img/placeholder_light.png" width="80px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <h1 class="m-0 p-0 w-100">Responsive out of the box.</h1>
+                    <p class="m-0 p-0 w-100">Seamless transition between devices or screen sizes with no custom
+                        CSS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row display-lg" id="haze-responsive-range">
+                <div class="d-flex">
+                    <div id="sm" class="active bg-alt text-center rounded-5 m-1 p-2">Small</div>
+                    <div id="md" class="bg-alt text-center rounded-5 m-1 p-2">Medium</div>
+                    <div id="lg" class="bg-alt text-center rounded-5 m-1 p-2">Large</div>
+                </div>
+                <input type="range" class="display-lg" min="0" max="100" value="40">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 col-md-12 hide-lg my-3">
+                    <div class="container shadow-sm bg-light rounded-3 p-5">
+                        <blockquote>
+                            This demo works better on larger screens (yes, once again). On mobile, you're only gonna see.. well, what you should be seing on mobile. Make sure to check this page again once you're on desktop. 
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 display-lg my-3" id="haze-responsive-demo-container">
+                    <div id="haze-responsive-demo" class="container shadow-sm bg-light rounded-3 p-5">
+                        <div class="d-flex flex-row-reverse">
+                            <p class="mt-0 mb-3">This is only a placeholder; please do not read. Thank you!</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                            </div>
+
+                            <div class="column">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                            </div>
+
+                            <div class="column">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                            </div>
+
+                            <div class="column">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                                <img class="w-100" src="img/placeholder_dark.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 my-3" id="haze-responsive-demo-container-sibling">
+                    <div class="code-container shadow-sm rounded-5">
+                        <div class="code-header border-bottom roudned-top">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"wrapper d-flex flex-wrap w-100"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"wrapper d-flex flex-wrap w-100"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"wrapper d-flex flex-wrap w-100"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;</span>
+                                <span class="code element">div</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"wrapper d-flex flex-wrap w-100"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&lt;/</span>
+                                <span class="code element">div</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-alt">
+        <div class="container content-center d-flex flex-column py-5 mb-5">
+            <h1 class="text-center">Found what you were looking for?</h1>
+            <p class="text-center mb-4">If the the simplicity, style and customizability have already convinced
+                you,give
+                it a try!<br class="hide-sm">
+                Don't forget there's more where this one came from!</p>
+            <div class="d-flex">
+                <a class="button primary" href="docs/index.html">See Docs</a>
+                <a class="button" href="docs/index.html">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Haze Plus Plus -->
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="d-flex">
+                <div class="pe-3">
+                    <img class="pe-3" src="img/placeholder_light.png" width="100px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap flex-column">
+                    <h1 class="m-0 p-0">Easily code. Easily debug.</h1>
+                    <p class="m-0 p-0">This is only a placeholder; please do not read. Thank you!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 my-3">
+                    <div class="container shadow-sm bg-light rounded-3 p-5">
+                        <img class="w-100" src="img/placeholder_dark.png">
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 my-3">
+                    <div class="code-container shadow-sm rounded-5">
+                        <div class="code-header border-bottom roudned-top">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="d-flex">
+                <div class="pe-3">
+                    <img class="pe-3" src="img/placeholder_light.png" width="100px" alt="Serban Elyan">
+                </div>
+                <div class="d-flex flex-wrap flex-column">
+                    <h1 class="m-0 p-0">Components for days. Beautiful and minimal.</h1>
+                    <p class="m-0 p-0">This is only a placeholder; please do not read. Thank you!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 my-3">
+                    <div class="container shadow-sm bg-light rounded-3 p-5">
+                        <img class="w-100" src="img/placeholder_dark.png">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 my-3">
+                    <div class="code-container shadow-sm rounded-5">
+                        <div class="code-header border-bottom roudned-top">
+                            <div class="d-flex p-3">
+                                <div class="button close"></div>
+                                <div class="button minimize"></div>
+                                <div class="button fullscreen"></div>
+                            </div>
+                        </div>
+                        <div class="code-snippet ps-5 pe-5 py-4">
+                            <div class="row d-flex fs-6 mb-0">
+                                <span class="code punctuation">&emsp;&lt;</span>
+                                <span class="code element">img</span>
+                                <span class="code attr-name">&nbsp;class</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"w-100"</span>
+                                <span class="code attr-name">&nbsp;src</span>
+                                <span class="code punctuation">=</span>
+                                <span class="code attr-value">"img/placeholder_dark.png"</span>
+                                <span class="code punctuation">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-alt">
+        <div class="container content-center d-flex flex-column py-5 mb-5">
+            <h1 class="text-center">Found what you were looking for?</h1>
+            <p class="text-center mb-4">If the the simplicity, style and customizability have already convinced you,
+                give it a try!<br class="hide-sm">
+                Don't forget there's more where this one came from!</p>
+            <div class="d-flex">
+                <a class="button primary" href="docs/index.html">See Docs</a>
+                <a class="button" href="docs/index.html">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/haze.js" defer></script>
+    <script src="src/js/handler.js" defer></script>
+</body>
+
+</html>
