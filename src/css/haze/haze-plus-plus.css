@@ -1,7 +1,7 @@
 /*
- * Haze v1.0.0 (https://hazecss.com/)
+ * Haze v1.0.1 (https://hazecss.com/)
  * Developed by Serban Elyan (https://serbanelyan.com/)
- * Git (https://github.com/)
+ * Git (https://github.com/serbanelyan/hazecss)
  */
 
 .debug.on * {
@@ -20,9 +20,9 @@
     --magenta: #ff00ff;
 
     --accent: #0074cc;
-    --accent-hover: #006fc4;
+    --accent-hover: #0091ff;
     --accent-alt: #22547a;
-    --accent-hover: #22547a;
+    --accent-alt-hover: #22547a;
 
     --background: #eee;
     --background-main: #fff;
@@ -71,9 +71,13 @@
 
     --code: #333;
     --code-punctuation: #333;
-    --code-element: #006fc4;
-    --code-attr-name: #00b7ff;
-    --code-attr-value: #ff9130;
+    --code-element: #0065b3;
+    --code-attr-name: #0098d4;
+    --code-attr-value: #ff6600;
+    --code-class: #ffae00;
+    --code-value: #00d62e;
+    --code-media: #b930c0;
+
     --code-close: #ff5f58;
     --code-minimize: #ffbd2e;
     --code-fullscreen: #28ca42;
@@ -104,9 +108,9 @@
         --magenta: #ff00ff;
 
         --accent: #0074cc;
-        --accent-hover: #006fc4;
+        --accent-hover: #0091ff;
         --accent-alt: #22547a;
-        --accent-hover: #22547a;
+        --accent-alt-hover: #22547a;
 
         --background: #161f27;
         --background-main: #202b38;
@@ -157,6 +161,10 @@
         --code-element: #006fc4;
         --code-attr-name: #00b7ff;
         --code-attr-value: #ff9130;
+        --code-class: #ffce65;
+        --code-value: #acf0bb;
+        --code-media: #d941e2;
+
         --code-close: #ff5f58;
         --code-minimize: #ffbd2e;
         --code-fullscreen: #28ca42;
@@ -185,9 +193,9 @@
     --magenta: #ff00ff;
 
     --accent: #0074cc;
-    --accent-hover: #006fc4;
+    --accent-hover: #0091ff;
     --accent-alt: #22547a;
-    --accent-hover: #22547a;
+    --accent-alt-hover: #22547a;
 
     --background: #161f27;
     --background-main: #202b38;
@@ -237,6 +245,10 @@
     --code-element: #006fc4;
     --code-attr-name: #00b7ff;
     --code-attr-value: #ff9130;
+    --code-class: #ffce65;
+    --code-value: #acf0bb;
+    --code-media: #d941e2;
+
     --code-close: #ff5f58;
     --code-minimize: #ffbd2e;
     --code-fullscreen: #28ca42;
@@ -264,9 +276,9 @@
         --magenta: #ff00ff;
 
         --accent: #0074cc;
-        --accent-hover: #006fc4;
+        --accent-hover: #0091ff;
         --accent-alt: #22547a;
-        --accent-hover: #22547a;
+        --accent-alt-hover: #22547a;
 
         --background: #eee;
         --background-main: #fff;
@@ -312,11 +324,15 @@
         --form-text: #1d1d1d;
         --form-placeholder: #949494;
 
-        --code: #ccc;
-        --code-punctuation: #ccc;
-        --code-element: #006fc4;
-        --code-attr-name: #00b7ff;
-        --code-attr-value: #ff9130;
+        --code: #333;
+        --code-punctuation: #333;
+        --code-element: #0065b3;
+        --code-attr-name: #0098d4;
+        --code-attr-value: #ff6600;
+        --code-class: #ffae00;
+        --code-value: #00d62e;
+        --code-media: #b930c0;
+
         --code-close: #ff5f58;
         --code-minimize: #ffbd2e;
         --code-fullscreen: #28ca42;
@@ -499,10 +515,102 @@ nav .nav-container {
     }
 }
 
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+    color: var(--text-main) !important;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.breadcrumb-item:hover {
+    color: var(--text-muted) !important;
+}
+
+
+.breadcrumb-item:not(:last-child)::after {
+    padding-left: 5px;
+    content: var(--breadcrumb-separator, "/");
+}
+
+.breadcrumb-item.active {
+    color: var(--link) !important;
+}
+
+.breadcrumb-item.active:hover {
+    color: var(--link-hover) !important;
+}
+
+.breadcrumb .breadcrumb-menu-toggle {
+    background: transparent ;
+    border-radius: 6px;
+    padding: 2px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.breadcrumb-menu:not(.collapsed) {
+    height: calc(100dvh - 178px) !important;
+    max-height: calc(100dvh - 178px) !important;
+    overflow-y: auto !important;
+}
+
+body {
+    overflow: auto;
+}
+
+@media (min-width: 768px) {
+    .breadcrumb .breadcrumb-menu-toggle {
+        display: none;
+    }
+}
+
+.breadcrumb .breadcrumb-menu-toggle:focus {
+    box-shadow: none !important;
+}
+
+.breadcrumb .breadcrumb-menu-toggle-icon {
+    background-image: url('../../../img/placeholder_light.png');
+    background-size: contain;
+    height: 20px !important;
+    width: 20px !important;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-collapse.collapsed {
+        display: none;
+    }
+
+    .breadcrumb-collapse:not(.collapsed) {
+        display: block;
+    }
+}
+
 span.code {
     width: auto;
     margin: 0;
     padding: 0;
+    display: flex;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 16px;
+}
+
+div.code-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.code-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .code-header {
@@ -511,6 +619,10 @@ span.code {
 
 .code-snippet {
     background-color: var(--background-main) !important;
+}
+
+.code-container {
+    background-color: var(--background) !important;
 }
 
 .code-header-container {
@@ -550,6 +662,18 @@ span.code.attr-name {
 
 span.code.attr-value {
     color: var(--code-attr-value);
+}
+
+span.code.class {
+    color: var(--code-class);
+}
+
+span.code.value {
+    color: var(--code-value);
+}
+
+span.code.media {
+    color: var(--code-media);
 }
 
 span.code.text {

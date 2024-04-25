@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout | HazeCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/placeholder_light.png" alt="website logo" height="16px">
+
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+
+<body class="debug off">
+    <nav class="navbar fixed-top bg-main shadow-sm">
+        <div class="container nav-container">
+            <div class="container d-flex justify-content-between p-0">
+                <a href="#" class="d-flex" alt="website logo">
+                    <img class="nav-logo" src="../../img/placeholder_light.png" width="48px" alt="website logo"></a>
+                <button id="nav-toggle" class="nav-toggle">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapsed">
+                <div class="nav-list d-flex">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                    <a class="nav-link active" href="docs/getting-started/introduction.html">Docs</a>
+                    <a class="nav-link" href="../../demo/index.html">Demo</a>
+                    <a class="nav-link" href="../../downloads.html">Downloads</a>
+                    <a class="nav-icon" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/placeholder_light.png" width="28px" alt="Git"></a>
+                    <a class="nav-icon" href="#"><img src="../../img/placeholder_light.png" width="28px"
+                            alt="Donate"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative pb-5 mb-0">
+        <div class="bg-abstract">
+            <div class="bg-overlay"></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container text-center pt-5 my-5">
+                <h1 class="header-title hs-1 text-light fw-bold mt-5 mb-0">Layout</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-none d-md-block mt-0 mb-5"></div>
+
+    <div class="container-fluid mt-0 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-none d-md-block">
+                    <div class="container h-100 p-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/introduction.html">Introduction</a>
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/installation.html">Installation</a>
+                                <a class="text-nowrap px-2 mb-2" href="../getting-started/support.html">Support</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../core-concepts/helpers-and-utilities.html">Helpers & Utilities</a>
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../core-concepts/responsive-design.html">Responsive Design</a>
+                                <a class="text-nowrap px-2 mb-2" href="../core-concepts/dark-light-mode.html">Dark/
+                                    Light Mode</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../components/breadcrumb.html">Breadcrumb</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/button.html">Button</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/navbar.html">Navbar</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../customization/colors.html">Colors</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/variables.html">Variables</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/color-modes.html">Color
+                                    Modes</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="breakpoints.html">Breakpoints</a>
+                                <a class="text-nowrap px-2 mb-2" href="containers.html">Containers</a>
+                                <a class="text-nowrap px-2 mb-2" href="gutters.html">Gutters</a>
+                                <a class="text-nowrap ps-2 pb-2" href="offsets.html">Offsets</a>
+                                <a class="text-nowrap bg-alt rounded-5 py-2 px-2 mb-2" href="rows-and-columns.html">Rows
+                                    &
+                                    Columns</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/focus-ring.html">Focus
+                                    Ring</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/ratio.html">Ratio</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/stretched-link.html">Stretched
+                                    Link</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/text-truncate.html">Text Truncate</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/vertical-rule.html">Vertical Rule</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/visually-hidden.html">Visually
+                                    Hidden</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/border.html">Border</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/display.html">Display</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/flex.html">Flex</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/float.html">Float</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/opacity.html">Opacity</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/overflow.html">Overflow</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/shadow.html">Shadow</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/sizing.html">Sizing</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/spacing.html">Spacing</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/text.html">Text</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/visibility.html">Visibility</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/z-index.html">Z-Index</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="container p-0">
+                        <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
+                            scroll-into-view="true" scroll-offset="62">
+                            <div class="breadcrumb bg-alt p-3">
+                                <button id="breadcrumb-menu-toggle" class="breadcrumb-menu-toggle">
+                                    <span class="breadcrumb-menu-toggle-icon"></span>
+                                </button>
+                                <a class="breadcrumb-item" href="breakpoints.html">Layout</a>
+                                <a class="breadcrumb-item active" href="rows-and-columns.html">Rows & Columns</a>
+                            </div>
+                            <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
+                                id="breadcrumb-collapse">
+                                <div class="d-flex flex-column">
+                                    <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/introduction.html">Introduction</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/installation.html">Installation</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/support.html">Support</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/helpers-and-utilities.html">Helpers & Utilities</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/responsive-design.html">Responsive Design</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/dark-light-mode.html">Dark/ Light Mode</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../components/breadcrumb.html">Breadcrumb</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/button.html">Button</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/navbar.html">Navbar</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/colors.html">Colors</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../customization/variables.html">Variables</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/color-modes.html">Color
+                                            Modes</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="breakpoints.html">Breakpoints</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="containers.html">Containers</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="gutters.html">Gutters</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="offsets.html">Offsets</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="rows-and-columns.html">Rows & Columns</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/focus-ring.html">Focus
+                                            Ring</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/ratio.html">Ratio</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/stretched-link.html">Stretched
+                                            Link</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/text-truncate.html">Text
+                                            Truncate</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/vertical-rule.html">Vertical
+                                            Rule</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/visually-hidden.html">Visually
+                                            Hidden</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/border.html">Border</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/display.html">Display</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/flex.html">Flex</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/float.html">Float</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/opacity.html">Opacity</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/overflow.html">Overflow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/shadow.html">Shadow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/sizing.html">Sizing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/spacing.html">Spacing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/text.html">Text</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../utilities/visibility.html">Visibility</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/z-index.html">Z-Index</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-3">
+                            <div class="pb-5">
+                                <h1 class="p-0 m-0">Rows & Columns</h1>
+                                <p>Haze uses a series of rows, and columns to layout and align content. The grid system
+                                    is built with flexbox and is fully responsive. Below is an example with a two
+                                    equal-width columns across all devices and viewport widths, using the <code
+                                        class="p-1">row</code> and <code class="p-1">col</code>
+                                    classes.</p>
+
+                                <div class="container text-center mx-0 px-3">
+                                    <div class="row">
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            Column
+                                        </div>
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            Column
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+        &lt;div class="container text-center"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col"&gt;Column&lt;/div&gt;
+                &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+    </code></pre>
+
+                                <p>Columns in Haze can be declared three ways: with a specific percentage defined
+                                    (expressed as a number, x of 12) where the columns will be of the specified width,
+                                    with no specific percentage (auto), where all columns will be an equal width or
+                                    automatic, where the column spans the width necessary to accomodate its content.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Auto-width columns</h2>
+                                </div>
+
+                                <p>To scale the columns automatically, just use class <code class="p-1">.col</code> any
+                                    number of times within a <code class="p-1">.row</code> and Haze will take care of
+                                    the rest, as shown below:</p>
+
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            1 of 2
+                                        </div>
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            2 of 2
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            1 of 3
+                                        </div>
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            2 of 3
+                                        </div>
+                                        <div class="col bg rounded-5 m-2 p-3">
+                                            3 of 3
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col"&gt;1 of 2&lt;/div&gt;
+            &lt;div class="col"&gt;2 of 2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col"&gt;1 of 3&lt;/div&gt;
+            &lt;div class="col"&gt;2 of 3&lt;/div&gt;
+            &lt;div class="col"&gt;3 of 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Defined-width columns</h2>
+                                </div>
+
+                                <p>To declare a column's width, you need to use class <code
+                                        class="p-1">.col-<var>x</var></code>, where <var>x</var> represents the
+                                    percentage of space the column should occupy, ranging from 1 to 12.</p>
+
+                                <div class="container my-4 text-center">
+                                    <div class="row my-3">
+                                        <div class="col-6">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">1 of 2 (6 of 12)</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">2 of 2 (6 of 12)</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">1 of 3 (4 of 12)</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">2 of 3 (8 of 12)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-6"&gt;1 of 2 (6 of 12)&lt;/div&gt;
+            &lt;div class="col-6"&gt;2 of 2 (6 of 12)&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-4"&gt;1 of 3 (4 of 12)&lt;/div&gt;
+            &lt;div class="col-8"&gt;2 of 3 (8 of 12)&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                                <p>For instance, in the above example there are two columns on the first row, equally
+                                    defined as halves (<code class="p-1">.col-6</code> of 12). Similarly, the second row
+                                    is equally divided in
+                                    three, and the first column takes one third (<code class="p-1">.col-4</code> of 12)
+                                    whilst the second one takes
+                                    two thirds (<code class="p-1">.col-8</code> of 12). Note that the <code
+                                        class="p-1">.col-6</code> declaration in this example resulted in the same
+                                    outcome as <code class="p-1">.col</code> in the previous example.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Combined-width columns</h2>
+                                </div>
+
+                                <p>Both types of columns described above can be used together within a singular row. For
+                                    instance, you can define the width of a column and have the other columns on the
+                                    same row resize around it. Note that the undefined-width columns will always resize
+                                    to fill the row.</p>
+
+                                <div class="container my-4 text-center">
+                                    <div class="row my-3">
+                                        <div class="col">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">1 of 3</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">2 of 3</p>
+                                        </div>
+                                        <div class="col">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">1 of 3</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col"&gt;1 of 3&lt;/div&gt;
+            &lt;div class="col-6"&gt;2 of 3&lt;/div&gt;
+            &lt;div class="col"&gt;3 of 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Content-defined-width columns</h2>
+                                </div>
+
+                                <p>In order to declare a column whose width is dependent on its content length, use
+                                    <code class="p-1">.col-auto</code> or <code
+                                        class="p-1">.col-{breakpoint}-auto</code>. For instance, in the below example
+                                    there are three columns on the first row, one of which scales based on the content,
+                                    and two additional columns, each taking 1/6 of the row. Similarly, on the second
+                                    row, one column scales based on the content while the orther two take up the rest of
+                                    the row equally.
+                                </p>
+
+                                <div class="container my-4 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-lg-2 mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col-12 col-lg-auto mb-3">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">This column has content</p>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col-12 col-lg-auto mb-3">
+                                            <p class="bg rounded-5 m-0 p-3 text-truncate">This column has more
+                                                content</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row justify-content-center"&gt;
+            &lt;div class="col-12 col-lg-2"&gt;Column&lt;/div&gt;
+            &lt;div class="col-12 col-lg-auto"&gt;
+                This column has content
+            &lt;/div&gt;
+            &lt;div class="col-12 col-lg-2"&gt;Column&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row justify-content-center"&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col-12 col-lg-auto"&gt;
+                This column has a little more content
+            &lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Responsive columns</h2>
+                                </div>
+
+                                <p>There are six tiers of predefined classes for building complex responsive layouts.
+                                    These can be used to adapt the number of rows and columns you have depending on the
+                                    viewport width or device screen size. To better illustrate how such a declaration is
+                                    intended to be used, consider the following example:</p>
+
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <p class="bg rounded-5 m-2 p-3">.col-md-6 .col-sm-12</p>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <p class="bg rounded-5 m-2 p-3">.col-md-6 .col-sm-12</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-6 col-sm-12"&gt;
+                Column
+            &lt;/div&gt;
+            &lt;div class="col-md-6 col-sm-12"&gt;
+                Column
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>In the given example, there is a row containing two columns. Both columns have the
+                                    same <code class="p-1">.col-md-6 .col-sm-12</code> defined. That means that:</p>
+                                <ul>
+                                    <li>On medium screens and above (<code class="p-1">col-md-6</code>), each column
+                                        will occupy 6 out of 12 units, filling the space of a complete row and appearing
+                                        alongside each other</li>
+                                    <li>On small screens (<code class="p-1">col-sm-12</code>), each column will occupy
+                                        all 12 out of 12 units. As a result, the columns will stack vertically,
+                                        resembling two distinct rows</li>
+                                </ul>
+
+                                <p>It's not necessary to have columns of equal width in order to achieve a seamless
+                                    appearence. Optimal results can be attained with various combinations of widths,
+                                    provided they are appropriately defined for all screen sizes.</p>
+
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <p class="bg rounded-5 m-2 p-3 text-truncate">.col-lg-4 .col-md-6 .col-sm-12
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <p class="bg rounded-5 m-2 p-3 text-truncate">.col-lg-4 .col-md-6 .col-sm-12
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 col-sm-12">
+                                            <p class="bg rounded-5 m-2 p-3 text-truncate">.col-lg-4 .col-md-12
+                                                .col-sm-12</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+&lt;div class="container text-center"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-lg-4 col-md-6 col-sm-12"&gt;
+            Column
+        &lt;/div&gt;
+        &lt;div class="col-lg-4 col-md-6 col-sm-12"&gt;
+            Column
+        &lt;/div&gt;
+        &lt;div class="col-lg-4 col-md-12 col-sm-12"&gt;
+            Column
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+                                <p>In the given example, there is a row containing three columns.The first two columns
+                                    share the same class, namely <code class="p-1">.col-lg-4 .col-md-6 .col-sm-12</code>
+                                    defined, whereas the third column diverges by incorporating the <code
+                                        class="p-1">.col-md-12</code> class instead of <code
+                                        class="p-1">.col-md-6</code>.</p>
+                                <ul>
+                                    <li>On large screens and above (<code class="p-1">col-lg-4</code>), each column
+                                        will occupy 4 out of 12 units, filling the space of a complete row and appearing
+                                        alongside each other</li>
+                                    <li>On medium screens (<code class="p-1">col-md-6</code> and <code
+                                            class="p-1">col-md-12</code> respectively), the first and second columns
+                                        will each take up 6 out of 12 units, creating a complete row. Meanwhile, the
+                                        third column will occupy all 12 units, constituting another row below</li>
+                                    <li>On small screens (<code class="p-1">col-sm-12</code>), each column will occupy
+                                        all 12 out of 12 units. As a result, the columns will stack vertically,
+                                        resembling two distinct rows</li>
+                                </ul>
+
+                                <p>There are alternate ways of splitting content over an odd number of coplumns and
+                                    avoiding unpleasant-looking alignments. Some notable examples are the <code
+                                        class="p-1">justify-content-center</code> and <code
+                                        class="p-1">offset-{breakpoint}-*</code>.</p>
+
+                                <p>More information on content justification will be provided in the <a
+                                        href="../utilities/flex.html">Utilities/ Flex</a>, while details on column
+                                    offsetting will be covered in the <a href="../layout/offsets.html">Layout/
+                                        Offsets</a> section.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Row columns</h2>
+                                </div>
+
+                                <blockquote>
+                                    This functionality has been marked as deprecated starting from Haze 1.0.1 and is
+                                    slated for removal in Haze 1.1.0 due to its infrequent usage. Any functionalities
+                                    relying on the adjacent classes <code class="p-1">.row-cols-*</code> can be
+                                    substituted by explicitly
+                                    defining the width for each column.
+                                </blockquote>
+
+                                <p>Use the <code class="p-1">.row-cols-*</code> classes to set the number of columns
+                                    that best render your content and layout. Whereas normal <code
+                                        class="p-1">.col-*</code> classes apply to the individual columns, the row
+                                    columns classes are set on the parent .row as a shortcut.</p>
+
+                                <div class="container text-center">
+                                    <div class="row row-cols-2">
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row row-cols-2"&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <div class="container text-center">
+                                    <div class="row row-cols-3">
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="bg rounded-5 m-0 py-3 text-truncate">Column</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="container text-center"&gt;
+        &lt;div class="row row-cols-3&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+            &lt;div class="col"&gt;Column&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark pt-5 pb-2 m-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 content-center">
+                    <img class="footer-logo" src="../../img/placeholder_light.png" width="200px" alt="website logo"></a>
+                </div>
+                <div class="col-lg-8 col-md-12 d-none d-md-block">
+                    <div class="d-flex flex-row flex-nowrap content-center">
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Getting started</p>
+                            <a class="text-nowrap pb-2" href="#">Introduction</a>
+                            <a class="text-nowrap pb-2" href="#">Installation</a>
+                            <a class="text-nowrap pb-2" href="#">Support</a>
+                        </div>
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Core concepts</p>
+                            <a class="text-nowrap pb-2" href="#">Helpers and Utilities</a>
+                            <a class="text-nowrap pb-2" href="#">Responsive Design</a>
+                            <a class="text-nowrap pb-2" href="#">Dark/ Light Mode</a>
+                        </div>
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Support Haze</p>
+                            <a class="text-nowrap pb-2" href="#">Sponsor on GitHub</a>
+                            <a class="text-nowrap pb-2" href="#">Sponsor on Patreon</a>
+                            <a class="text-nowrap pb-2" href="#">Buy us some coffee</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 d-md-none">
+                    <div class="d-flex flex-row flex-wrap content-center">
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Getting started</p>
+                            <a class="pb-2" href="#">Introduction</a>
+                            <a class="pb-2" href="#">Installation</a>
+                            <a class="pb-2" href="#">Support</a>
+                            <p class="text-nowrap">Core concepts</p>
+                            <a class="pb-2" href="#">Helpers and Utilities</a>
+                            <a class="pb-2" href="#">Responsive Design</a>
+                            <a class="pb-2" href="#">Dark/ Light Mode</a>
+                            <p class="text-nowrap">Support Haze</p>
+                            <a class="pb-2" href="#">Sponsor on GitHub</a>
+                            <a class="pb-2" href="#">Sponsor on Patreon</a>
+                            <a class="pb-2" href="#">Buy us some coffee</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center pt-5 pb-0 m-0">
+                Designed and developed by <a href="https://serbanelyan.com/">SerbanElyan</a> using
+                HazeCSS pre-release 1.0.1 &copy; 2024 HazeCSS
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../src/js/haze-plus-plus.js" defer></script>
+    <script src="../../src/js/handler.js" defer></script>
+</body>
+
+</html>

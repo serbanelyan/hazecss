@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Core Concepts | HazeCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/placeholder_light.png" alt="website logo" height="16px">
+
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+
+<body class="debug off">
+    <nav class="navbar fixed-top bg-main shadow-sm">
+        <div class="container nav-container">
+            <div class="container d-flex justify-content-between p-0">
+                <a href="#" class="d-flex" alt="website logo">
+                    <img class="nav-logo" src="../../img/placeholder_light.png" width="48px" alt="website logo"></a>
+                <button id="nav-toggle" class="nav-toggle">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapsed">
+                <div class="nav-list d-flex">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                    <a class="nav-link active" href="docs/getting-started/introduction.html">Docs</a>
+                    <a class="nav-link" href="../../demo/index.html">Demo</a>
+                    <a class="nav-link" href="../../downloads.html">Downloads</a>
+                    <a class="nav-icon" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/placeholder_light.png" width="28px" alt="Git"></a>
+                    <a class="nav-icon" href="#"><img src="../../img/placeholder_light.png" width="28px"
+                            alt="Donate"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative pb-5 mb-0">
+        <div class="bg-abstract">
+            <div class="bg-overlay"></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container text-center pt-5 my-5">
+                <h1 class="header-title hs-1 text-light fw-bold mt-5 mb-0">Core Concepts</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-none d-md-block mt-0 mb-5"></div>
+
+    <div class="container-fluid mt-0 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-none d-md-block">
+                    <div class="container h-100 p-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/introduction.html">Introduction</a>
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/installation.html">Installation</a>
+                                <a class="text-nowrap px-2 mb-2" href="../getting-started/support.html">Support</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="helpers-and-utilities.html">Helpers &
+                                    Utilities</a>
+                                <a class="text-nowrap px-2 mb-2" href="responsive-design.html">Responsive Design</a>
+                                <a class="text-nowrap bg-alt rounded-5 py-2 px-2 mb-2" href="dark-light-mode.html">Dark/
+                                    Light Mode</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../components/breadcrumb.html">Breadcrumb</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/button.html">Button</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/navbar.html">Navbar</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../customization/colors.html">Colors</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/variables.html">Variables</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/color-modes.html">Color
+                                    Modes</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../layout/breakpoints.html">Breakpoints</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/containers.html">Containers</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/gutters.html">Gutters</a>
+                                <a class="text-nowrap ps-2 pb-2" href="../layout/offsets.html">Offsets</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/rows-and-columns.html">Rows &
+                                    Columns</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/focus-ring.html">Focus Ring</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/ratio.html">Ratio</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/stretched-link.html">Stretched
+                                    Link</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/text-truncate.html">Text Truncate</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/vertical-rule.html">Vertical Rule</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/visually-hidden.html">Visually
+                                    Hidden</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/border.html">Border</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/display.html">Display</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/flex.html">Flex</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/float.html">Float</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/opacity.html">Opacity</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/overflow.html">Overflow</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/shadow.html">Shadow</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/sizing.html">Sizing</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/spacing.html">Spacing</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/text.html">Text</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/visibility.html">Visibility</a>
+                                <a class="text-nowrap px-2 mb-2" href="../utilities/z-index.html">Z-Index</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="container p-0">
+                        <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
+                            scroll-into-view="true" scroll-offset="62">
+                            <div class="breadcrumb bg-alt p-3">
+                                <button id="breadcrumb-menu-toggle" class="breadcrumb-menu-toggle">
+                                    <span class="breadcrumb-menu-toggle-icon"></span>
+                                </button>
+                                <a class="breadcrumb-item" href="helpers-and-utilities.html">Core Concepts</a>
+                                <a class="breadcrumb-item active" href="dark-light-mode.html">Dark/ Light Mode</a>
+                            </div>
+                            <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
+                                id="breadcrumb-collapse">
+                                <div class="d-flex flex-column">
+                                    <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/introduction.html">Introduction</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/installation.html">Installation</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/support.html">Support</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="helpers-and-utilities.html">Helpers &
+                                            Utilities</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="responsive-design.html">Responsive
+                                            Design</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="dark-light-mode.html">Dark/ Light
+                                            Mode</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../components/breadcrumb.html">Breadcrumb</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/button.html">Button</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/navbar.html">Navbar</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/colors.html">Colors</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../customization/variables.html">Variables</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/color-modes.html">Color
+                                            Modes</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../layout/breakpoints.html">Breakpoints</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/containers.html">Containers</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/gutters.html">Gutters</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/offsets.html">Offsets</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/rows-and-columns.html">Rows &
+                                            Columns</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/focus-ring.html">Focus
+                                            Ring</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/ratio.html">Ratio</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/stretched-link.html">Stretched
+                                            Link</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/text-truncate.html">Text
+                                            Truncate</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/vertical-rule.html">Vertical
+                                            Rule</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/visually-hidden.html">Visually
+                                            Hidden</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/border.html">Border</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/display.html">Display</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/flex.html">Flex</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/float.html">Float</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/opacity.html">Opacity</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/overflow.html">Overflow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/shadow.html">Shadow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/sizing.html">Sizing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/spacing.html">Spacing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/text.html">Text</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../utilities/visibility.html">Visibility</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../utilities/z-index.html">Z-Index</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-3">
+                            <div class="pb-5">
+                                <h1 class="p-0 m-0">Dark/ Light Mode</h1>
+                                <p>Modern browsers come with a way to detect if a user has set their theme preference to
+                                    light or dark by using the <code class="p-1">prefers-color-scheme</code> keyword.
+                                    This value can be used in a media query to change a website's styles by overwriting
+                                    the <code class="p-1">:root</code> class when a certain mode is selected.</p>
+
+                                <p>Haze uses the light mode as default for the <code class="p-1">:root</code> class and
+                                    changes it automatically to dark depending on the user preferences. However, there's
+                                    also the possibility to reverse the user preference of force a certain mode.</p>
+
+                                <blockquote>
+                                    It's also possible to use multiple modes within a website or even a single page,
+                                    although not officially supported. There are certain limitations which will be
+                                    briefly touched in the scope of this page.
+                                </blockquote>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Force a mode within a page</h2>
+                                </div>
+
+                                <p>In order to force a specific mode onto a section or even a specific element, use
+                                    the <code class="p-1">.bg-light</code> and <code class="p-1">.bg-dark</code>
+                                    classes.</p>
+
+                                <p>The background color for the following declaration will always be light,
+                                    disregarding the system theme:</p>
+
+                                <pre><code>&lt;div class="bg-light"&gt;&lt;/div&gt;</code></pre>
+
+                                <p>The background color for the following declaration will always be dark,
+                                    disregarding the system theme:</p>
+
+                                <pre><code>&lt;div class="bg-dark"&gt;&lt;/div&gt;</code></pre>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Force a mode to the whole page</h2>
+                                </div>
+
+                                <p>In order to force a specific mode the whole page, use the <code
+                                        class="p-1">.bg-light</code> or <code class="p-1">.bg-dark</code> classes on
+                                    the <code class="p-1">body</code> element.</p>
+
+                                <pre><code>&lt;body class="bg-dark"&gt;&lt;/body&gt;</code></pre>
+
+                                <p>Doing so will apply the pre-defined styling to the whole page. This behavior can be
+                                    later
+                                    overwridden within specific sections, on demand, using the same classes.</p>
+
+                                <pre><code>
+    &lt;body class="bg-dark"&gt;
+        &lt;p&gt;This text will be dark&lt;/p&gt;
+        &lt;div class="bg-light"&gt;
+            &lt;p&gt;This text will be light&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+                                
+</code></pre>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Force automatic theme</h2>
+                                </div>
+
+                                <p>Haze includes the <code class="p-1">.bg-auto</code> class, which functions similarly
+                                    to having no specific background class applied. Thus, the system theme will be
+                                    globally applied unless overridden.</p>
+
+                                <p>The <code class="p-1">.bg-auto</code> class is designed to work alongside the <code
+                                        class="p-1">.bg-reverse</code> class, enabling the integration of both light and
+                                    dark themes within a single page. To illustrate this concept, consider the following
+                                    example:</p>
+
+                                <pre><code>
+    &lt;body class="bg-auto"&gt;
+        &lt;p&gt;This text will be based on the system settings&lt;/p&gt;
+        &lt;div class="bg-reverse"&gt;
+            &lt;p&gt;This text will be based on the system settings but reversed&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+</code></pre>
+
+                                <p>In the provided example, the body will be split into two sections. The upper half
+                                    will be a light theme when the system theme is set to light, while the lower half
+                                    will be dark. Conversely, when the system theme is dark, the sections will reverse:
+                                    the upper section will be dark, and the lower one will be light.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">How it works</h2>
+                                </div>
+
+                                <p>The variables used for all classes are initially defined within the <code
+                                        class="p-1">:root</code> class, with a default light theme. These variables are
+                                    overridden with darker colors based on the user's preferred color scheme. This
+                                    principle extends to paired classes like <code class="p-1">.bg-light</code> and
+                                    <code class="p-1">.bg-dark</code>, as well as <code class="p-1">.bg-auto</code> and
+                                    <code class="p-1">.bg-reverse</code>.
+                                </p>
+
+                                <pre><code>
+    :root,
+    .bg-auto *,
+    .bg-light * {
+        --background: #eee;
+        --background-main: #fff;
+        --background-alt: #fafafa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root,
+        .bg-auto * {
+            --background: #161f27;
+            --background-main: #202b38;
+            --background-alt: #1a242f;
+        }
+    }
+
+    .bg-reverse *,
+    .bg-dark * {
+        --background: #161f27;
+        --background-main: #202b38;
+        --background-alt: #1a242f;
+    }
+
+
+    @media (prefers-color-scheme: dark) {
+        .bg-reverse * {
+            --background: #eee;
+            --background-main: #fff;
+            --background-alt: #fafafa;
+        }
+    }
+
+</code></pre>
+
+                                <p>The color schemes for each theme are conveniently adjustable, as all relevant
+                                    declarations are located at the beginning of the file. Additionally, the range of
+                                    themes can be expanded by defining new classes in a similar manner.</p>
+
+                                <p>For more information on customization refer to the <a
+                                        href="../customization/variables.html">Customization/ Variables</a> section.
+                                    Additionally, more information about color modes can be found in the <a
+                                        href="../customization/color-modes.html">Customization/ Color Modes</a> section.
+                                </p>
+
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Known limitations</h2>
+                                </div>
+
+                                <p>When combining multiple theme classes, unexpected behavior may occur. For instance,
+                                    using the <code class="p-1">.bg-auto</code> class within the <code
+                                        class="p-1">.bg-dark</code> class will always override <code
+                                        class="p-1">.bg-auto</code> due to their order of definition.
+                                </p>
+
+                                <pre><code>
+    &lt;div class="bg-dark"&gt;
+        &lt;p&gt;This text will be dark&lt;/p&gt;
+        &lt;div class="bg-auto"&gt;
+            &lt;p&gt;This text will be dark as well&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                
+</code></pre>
+
+                                <p>Similarly, when the <code class="p-1">.bg-reverse</code> class is used within the
+                                    <code class="p-1">.bg-light</code> class, the <code class="p-1">.bg-reverse</code>
+                                    appears to be partially be overridden.
+                                </p>
+
+                                <pre><code>
+    &lt;div class="bg-light"&gt;
+        &lt;p&gt;This text will be light&lt;/p&gt;
+        &lt;div class="bg-reverse"&gt;
+            &lt;p&gt;This text will be partially dark&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    
+</code></pre>
+
+                                <blockquote>We hope to address these limitation in a future version of Haze.
+                                </blockquote>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="bg-dark pt-5 pb-2 m-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 content-center">
+                        <img class="footer-logo" src="../../img/placeholder_light.png" width="200px"
+                            alt="website logo"></a>
+                    </div>
+                    <div class="col-lg-8 col-md-12 d-none d-md-block">
+                        <div class="d-flex flex-row flex-nowrap content-center">
+                            <div class="d-flex flex-column px-5 py-5">
+                                <p class="text-nowrap">Getting started</p>
+                                <a class="text-nowrap pb-2" href="#">Introduction</a>
+                                <a class="text-nowrap pb-2" href="#">Installation</a>
+                                <a class="text-nowrap pb-2" href="#">Support</a>
+                            </div>
+                            <div class="d-flex flex-column px-5 py-5">
+                                <p class="text-nowrap">Core concepts</p>
+                                <a class="text-nowrap pb-2" href="#">Helpers and Utilities</a>
+                                <a class="text-nowrap pb-2" href="#">Responsive Design</a>
+                                <a class="text-nowrap pb-2" href="#">Dark/ Light Mode</a>
+                            </div>
+                            <div class="d-flex flex-column px-5 py-5">
+                                <p class="text-nowrap">Support Haze</p>
+                                <a class="text-nowrap pb-2" href="#">Sponsor on GitHub</a>
+                                <a class="text-nowrap pb-2" href="#">Sponsor on Patreon</a>
+                                <a class="text-nowrap pb-2" href="#">Buy us some coffee</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 d-md-none">
+                        <div class="d-flex flex-row flex-wrap content-center">
+                            <div class="d-flex flex-column px-5 py-5">
+                                <p class="text-nowrap">Getting started</p>
+                                <a class="pb-2" href="#">Introduction</a>
+                                <a class="pb-2" href="#">Installation</a>
+                                <a class="pb-2" href="#">Support</a>
+                                <p class="text-nowrap">Core concepts</p>
+                                <a class="pb-2" href="#">Helpers and Utilities</a>
+                                <a class="pb-2" href="#">Responsive Design</a>
+                                <a class="pb-2" href="#">Dark/ Light Mode</a>
+                                <p class="text-nowrap">Support Haze</p>
+                                <a class="pb-2" href="#">Sponsor on GitHub</a>
+                                <a class="pb-2" href="#">Sponsor on Patreon</a>
+                                <a class="pb-2" href="#">Buy us some coffee</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center pt-5 pb-0 m-0">
+                    Designed and developed by <a href="https://serbanelyan.com/">SerbanElyan</a> using HazeCSS
+                    pre-release
+                    1.0.1
+                    &copy; 2024 HazeCSS
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../src/js/haze-plus-plus.js" defer></script>
+        <script src="../../src/js/handler.js" defer></script>
+</body>
+
+</html>

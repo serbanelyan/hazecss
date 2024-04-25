@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utilities | HazeCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/placeholder_light.png" alt="website logo" height="16px">
+
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
+    <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+
+<body class="debug off">
+    <nav class="navbar fixed-top bg-main shadow-sm">
+        <div class="container nav-container">
+            <div class="container d-flex justify-content-between p-0">
+                <a href="#" class="d-flex" alt="website logo">
+                    <img class="nav-logo" src="../../img/placeholder_light.png" width="48px" alt="website logo"></a>
+                <button id="nav-toggle" class="nav-toggle">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapsed">
+                <div class="nav-list d-flex">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                    <a class="nav-link active" href="docs/getting-started/introduction.html">Docs</a>
+                    <a class="nav-link" href="../../demo/index.html">Demo</a>
+                    <a class="nav-link" href="../../downloads.html">Downloads</a>
+                    <a class="nav-icon" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/placeholder_light.png" width="28px" alt="Git"></a>
+                    <a class="nav-icon" href="#"><img src="../../img/placeholder_light.png" width="28px"
+                            alt="Donate"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative pb-5 mb-0">
+        <div class="bg-abstract">
+            <div class="bg-overlay"></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container text-center pt-5 my-5">
+                <h1 class="header-title hs-1 text-light fw-bold mt-5 mb-0">Utilities</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-none d-md-block mt-0 mb-5"></div>
+
+    <div class="container-fluid mt-0 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-none d-md-block">
+                    <div class="container h-100 p-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/introduction.html">Introduction</a>
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../getting-started/installation.html">Installation</a>
+                                <a class="text-nowrap px-2 mb-2" href="../getting-started/support.html">Support</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../core-concepts/helpers-and-utilities.html">Helpers & Utilities</a>
+                                <a class="text-nowrap px-2 mb-2"
+                                    href="../core-concepts/responsive-design.html">Responsive Design</a>
+                                <a class="text-nowrap px-2 mb-2" href="../core-concepts/dark-light-mode.html">Dark/
+                                    Light Mode</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../components/breadcrumb.html">Breadcrumb</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/button.html">Button</a>
+                                <a class="text-nowrap px-2 mb-2" href="../components/navbar.html">Navbar</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../customization/colors.html">Colors</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/variables.html">Variables</a>
+                                <a class="text-nowrap px-2 mb-2" href="../customization/color-modes.html">Color
+                                    Modes</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../layout/breakpoints.html">Breakpoints</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/containers.html">Containers</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/gutters.html">Gutters</a>
+                                <a class="text-nowrap ps-2 pb-2" href="../layout/offsets.html">Offsets</a>
+                                <a class="text-nowrap px-2 mb-2" href="../layout/rows-and-columns.html">Rows &
+                                    Columns</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/focus-ring.html">Focus
+                                    Ring</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/ratio.html">Ratio</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/stretched-link.html">Stretched
+                                    Link</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/text-truncate.html">Text Truncate</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/vertical-rule.html">Vertical Rule</a>
+                                <a class="text-nowrap px-2 mb-2" href="../helpers/visually-hidden.html">Visually
+                                    Hidden</a>
+                            </div>
+                            <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                            <div class="d-flex flex-column">
+                                <a class="text-nowrap px-2 mb-2" href="border.html">Border</a>
+                                <a class="text-nowrap px-2 mb-2" href="display.html">Display</a>
+                                <a class="text-nowrap bg-alt rounded-5 py-2 px-2 mb-2" href="flex.html">Flex</a>
+                                <a class="text-nowrap px-2 mb-2" href="float.html">Float</a>
+                                <a class="text-nowrap px-2 mb-2" href="opacity.html">Opacity</a>
+                                <a class="text-nowrap px-2 mb-2" href="overflow.html">Overflow</a>
+                                <a class="text-nowrap px-2 mb-2" href="position.html">Position</a>
+                                <a class="text-nowrap px-2 mb-2" href="shadow.html">Shadow</a>
+                                <a class="text-nowrap px-2 mb-2" href="sizing.html">Sizing</a>
+                                <a class="text-nowrap px-2 mb-2" href="spacing.html">Spacing</a>
+                                <a class="text-nowrap px-2 mb-2" href="text.html">Text</a>
+                                <a class="text-nowrap px-2 mb-2" href="visibility.html">Visibility</a>
+                                <a class="text-nowrap px-2 mb-2" href="z-index.html">Z-Index</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="container p-0">
+                        <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
+                            scroll-into-view="true" scroll-offset="62">
+                            <div class="breadcrumb bg-alt p-3">
+                                <button id="breadcrumb-menu-toggle" class="breadcrumb-menu-toggle">
+                                    <span class="breadcrumb-menu-toggle-icon"></span>
+                                </button>
+                                <a class="breadcrumb-item" href="border.html">Utilities</a>
+                                <a class="breadcrumb-item active" href="flex.html">Flex</a>
+                            </div>
+                            <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
+                                id="breadcrumb-collapse">
+                                <div class="d-flex flex-column">
+                                    <p class="text-nowrap p-0 m-0 mb-2">Getting Started</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/introduction.html">Introduction</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/installation.html">Installation</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../getting-started/support.html">Support</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Core Concepts</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/helpers-and-utilities.html">Helpers & Utilities</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/responsive-design.html">Responsive Design</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../core-concepts/dark-light-mode.html">Dark/ Light Mode</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Components</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../components/breadcrumb.html">Breadcrumb</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/button.html">Button</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../components/navbar.html">Navbar</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Customization</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/colors.html">Colors</a>
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../customization/variables.html">Variables</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../customization/color-modes.html">Color
+                                            Modes</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Layout</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2"
+                                            href="../layout/breakpoints.html">Breakpoints</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/containers.html">Containers</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/gutters.html">Gutters</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/offsets.html">Offsets</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../layout/rows-and-columns.html">Rows &
+                                            Columns</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Helpers</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/clearfix.html">Clearfix</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/focus-ring.html">Focus
+                                            Ring</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/ratio.html">Ratio</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/stretched-link.html">Stretched
+                                            Link</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/text-truncate.html">Text
+                                            Truncate</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/vertical-rule.html">Vertical
+                                            Rule</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="../helpers/visually-hidden.html">Visually
+                                            Hidden</a>
+                                    </div>
+                                    <p class="text-nowrap p-0 m-0 mb-2">Utilities</p>
+                                    <div class="d-flex flex-column">
+                                        <a class="text-nowrap ps-2 pb-2" href="border.html">Border</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="display.html">Display</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="flex.html">Flex</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="float.html">Float</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="opacity.html">Opacity</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="overflow.html">Overflow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="position.html">Position</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="shadow.html">Shadow</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="sizing.html">Sizing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="spacing.html">Spacing</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="text.html">Text</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="visibility.html">Visibility</a>
+                                        <a class="text-nowrap ps-2 pb-2" href="z-index.html">Z-Index</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-3">
+                            <div class="pb-5">
+                                <h1 class="p-0 m-0">Flex</h1>
+                                <p>The <code class="p-1">.d-flex</code> and the adjacent classes are used to manage
+                                    layout, alignment and sizing for various elements. Aplying the specified class on a
+                                    container will transform the direct children elements into flex items. Flex
+                                    containers and items can be further modified with additional flex properties.</p>
+
+                                <div class="d-flex rounded-5 bg p-2 m-2">Flex container</div>
+                                <div class="d-flex rounded-5 bg p-2 m-2">Flex container</div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;&lt;/div&gt;
+    &lt;div class="d-flex"&gt;&lt;/div&gt;
+
+</code></pre>
+
+                                <div class="d-inline-flex rounded-5 flex-nowrap bg p-2 m-2">Inline-flex container</div>
+                                <div class="d-inline-flex rounded-5 flex-nowrap bg p-2 m-2">Inline-flex container</div>
+
+                                <pre><code>
+    &lt;div class="d-inline-flex"&gt;&lt;/div&gt;
+    &lt;div class="d-inline-flex"&gt;&lt;/div&gt;
+
+</code></pre>
+
+                                <p>Note that the flex class has responsive variations for each breakpoint, available in
+                                    two flavours, <code class="p-1">.d-{breakpoint}-flex</code> and <code
+                                        class="p-1">.d-{breakpoint}-inline-flex</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Flex Direction</h2>
+                                </div>
+
+                                <p>Flex direction determines how flex items are arranged within the flex container.
+                                    There are four directions, organized into two pairs. Horizontally, items are
+                                    displayed as either <code class="p-1">.flex-row</code> (the default browser
+                                    behavior) or <code class="p-1">.flex-row-reverse</code>.</p>
+
+                                <div class="d-flex flex-row text-center rounded-5">
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 1</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 2</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 3</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-row"&gt;
+        &lt;div class="bg"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+    
+</code></pre>
+
+                                <div class="d-flex flex-row-reverse text-center rounded-5">
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 1</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 2</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 3</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-row-reverse"&gt;
+        &lt;div class="bg"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>Vertically, the options are <code class="p-1">.flex-column</code> to start the column
+                                    from the top, or <code class="p-1">.flex-column-reverse</code> top start the column
+                                    from the bottom.</p>
+
+                                <div class="d-flex flex-column rounded-5">
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 1</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 2</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 3</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-column"&gt;
+        &lt;div class="bg"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <div class="d-flex flex-column-reverse rounded-5">
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 1</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 2</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item 3</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-column-reverse"&gt;
+        &lt;div class="bg"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>All the above-mentioned classes also have responsive variations: <code
+                                        class="p-1">.flex-{breakpoint}-row</code>, <code
+                                        class="p-1">.flex-{breakpoint}-row-reverse</code>, <code
+                                        class="p-1">.flex-{breakpoint}-column</code> and <code
+                                        class="p-1">.flex-{breakpoint}-column-reverse</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Justify Content</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.justify-content-*</code> class is used to change the alignment
+                                    of the flex items on the main axis (the x-axis by default or for elements within a
+                                    <code class="p-1">.flex-row</code> container, or the y-axis for elements within a
+                                    <code class="p-1">.flex-column</code> container). There are 6 possible values: start
+                                    (browser default), end, center, between, around and evenly.
+                                </p>
+
+                                <pre><code>&lt;div class="d-flex justify-content-start"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-start bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">Start</div>
+                                    <div class="bg rounded-5 p-3 m-1">Start</div>
+                                    <div class="bg rounded-5 p-3 m-1">Start</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex justify-content-end"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-end bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">End</div>
+                                    <div class="bg rounded-5 p-3 m-1">End</div>
+                                    <div class="bg rounded-5 p-3 m-1">End</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex justify-content-center"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-center bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">Center</div>
+                                    <div class="bg rounded-5 p-3 m-1">Center</div>
+                                    <div class="bg rounded-5 p-3 m-1">Center</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex justify-content-between"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-between bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">Between</div>
+                                    <div class="bg rounded-5 p-3 m-1">Between</div>
+                                    <div class="bg rounded-5 p-3 m-1">Between</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex justify-content-around"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-around bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">Around</div>
+                                    <div class="bg rounded-5 p-3 m-1">Around</div>
+                                    <div class="bg rounded-5 p-3 m-1">Around</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex justify-content-evenly"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex justify-content-evenly bg-alt rounded-5 mb-2">
+                                    <div class="bg rounded-5 p-3 m-1">Evenly</div>
+                                    <div class="bg rounded-5 p-3 m-1">Evenly</div>
+                                    <div class="bg rounded-5 p-3 m-1">Evenly</div>
+                                </div>
+
+                                <p>All the above-mentioned classes have responsive variations, denoted by syntax <code
+                                        class="p-1">.justify-content-{breakpoint}-*</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Align items</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.align-items-*</code> class is used to change the alignment of
+                                    the flex items on the main axis (the y-axis by default, and x-axis if the flex
+                                    container is of type <code class="p-1">.flex-column-*</code>). There are 5 values:
+                                    start, end, center, baseline, stretch (browser default).</p>
+
+                                <pre><code>&lt;div class="d-flex align-items-start"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex align-items-start text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 120px">
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Start</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Start</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Start</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex align-items-end"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex align-items-end text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 120px">
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">End</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">End</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">End</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex align-items-center"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex align-items-center text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 120px">
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Center</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Center</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Center</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex align-items-baseline"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex align-items-baseline text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 120px">
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Baseline</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Baseline</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Baseline</div>
+                                </div>
+                                <pre><code>&lt;div class="d-flex align-items-stretch"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex align-items-stretch text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 120px">
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Stretch</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Stretch</div>
+                                    <div class="bg flex-fill rounded-5 p-3 m-1">Stretch</div>
+                                </div>
+
+                                <p>All the above-mentioned classes have responsive variations, denoted by <code
+                                        class="p-1">.align-items-{breakpoint}-*</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Align self</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.align-self-*</code> class is used to individually change the
+                                    alignment of a certain flex item on the main axis (the y-axis by default, and x-axis
+                                    if the flex container is of type <code class="p-1">.flex-column-*</code>). There are
+                                    5 values, just as for the align property: start, end, center, baseline, stretch
+                                    (browser default).</p>
+
+                                <div class="d-flex text-center bg-alt rounded-5 mb-2" style="min-height: 120px">
+                                    <div class="bg align-self-start flex-fill rounded-5 p-3 m-1">Start</div>
+                                    <div class="bg align-self-center flex-fill rounded-5 p-3 m-1">Center</div>
+                                    <div class="bg align-self-end flex-fill rounded-5 p-3 m-1">End</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="align-self-start"&gt;&lt;/div&gt;
+        &lt;div class="align-self-center"&gt;&lt;/div&gt;
+        &lt;div class="align-self-end"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>All the above-mentioned classes have responsive variations, denoted by <code
+                                        class="p-1">.align-self-{breakpoint}-*</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Align content</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.align-content-*</code> class is used to align flex items
+                                    together (as a block) on the main axis (the y-axis by default, and x-axis if the
+                                    flex container is of type <code class="p-1">.flex-column-*</code>). There are 5
+                                    values: start, end, center, baseline, stretch (browser default).</p>
+
+                                <p>Note that this property has no effect on single rows of flex items.</p>
+
+                                <pre><code>&lt;div class="d-flex  align-content-start flex-wrap"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex  align-content-start flex-wrap text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 180px">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 4</p>
+                                    </div>
+                                </div>
+
+                                <pre><code>&lt;div class="d-flex  align-content-center flex-wrap"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex  align-content-center flex-wrap text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 180px">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 4</p>
+                                    </div>
+                                </div>
+
+                                <pre><code>&lt;div class="d-flex  align-content-between flex-wrap"&gt;&lt;/div&gt;</code></pre>
+                                <div class="d-flex  align-content-between flex-wrap text-center bg-alt rounded-5 mb-2"
+                                    style="min-height: 180px">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 4</p>
+                                    </div>
+                                </div>
+
+
+                                <p>All the above-mentioned classes have responsive variations, denoted by <code
+                                        class="p-1">.align-content-{breakpoint}-*</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Flex Fill</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.flex-fill</code> class is used is used on one or multiple
+                                    siblings to force them to take up all the available horizontal space within the the
+                                    flex container. All siblings with the <code class="p-1">.flex-fill</code> class will
+                                    have the same width.</p>
+
+                                <div class="d-flex text-center bg-alt rounded-5">
+                                    <div class="rounded-5 bg p-3 m-1">Flex item</div>
+                                    <div class="rounded-5 bg flex-fill p-3 m-1">Flex fill item</div>
+                                    <div class="rounded-5 bg p-3 m-1">Flex item</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="bg"&gt;Flex item&lt;/div&gt;
+        &lt;div class="bg flex-fill"&gt;Flex fill item&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <div class="d-flex text-center bg-alt rounded-5">
+                                    <div class="rounded-5 bg flex-fill p-3 m-1">Flex fill item</div>
+                                    <div class="rounded-5 bg flex-fill p-3 m-1">Flex fill item</div>
+                                    <div class="rounded-5 bg flex-fill p-3 m-1">Flex fill item</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="bg flex-fill"&gt;Flex fill item&lt;/div&gt;
+        &lt;div class="bg flex-fill"&gt;Flex fill item&lt;/div&gt;
+        &lt;div class="bg flex-fill"&gt;Flex fill item&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>The <code class="p-1">.flex-fill</code> class has responsive variations,
+                                    denoted by <code class="p-1">.flex-{breakpoint}-fill</code>.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Flex Wrap</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.flex-wrap</code> class is used to change how the flex items
+                                    wrap within the flex container. There are three values:</p>
+                                <ul>
+                                    <li><code class="p-1">.flex-nowrap</code> which does not allow the items to wrap; As
+                                        a concequence, the siblings will split the available space evenly; This is the
+                                        browser's default</li>
+                                    <li><code class="p-1">.flex-wrap</code> which allows the items to wrap in their
+                                        natural order</li>
+                                    <li><code class="p-1">.flex-wrap</code> which allows the items to wrap in reverse
+                                        order</li>
+                                </ul>
+
+                                <p>Note that in the below example, each item is defined with a width of 50%. As the
+                                    flex-container has class <code class="p-1">.flex-nowrap</code>, the flex items will
+                                    split the horizontal space evenly, resulting in a 33% width instead of the intended
+                                    50%.</p>
+                                <div class="d-flex flex-nowrap justify-content-center text-center bg-alt rounded-5">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-nowrap justify-content-center"&gt;
+        &lt;div class="w-50"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+
+                                <p>Note that in the below example, each item is defined with a width of 50%. As the
+                                    flex-container has class <code class="p-1">.flex-wrap</code>, the flex items will
+                                    wrap on the second row, each getting 50%. The centered alignment of the third
+                                    sibling is given by the <code class="p-1">.justify-content-center</code> class.</p>
+                                <div class="d-flex flex-wrap justify-content-center text-center bg-alt rounded-5">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-wrap justify-content-center"&gt;
+        &lt;div class="w-50"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>Note that in the below example, each item is defined with a width of 50%. As the
+                                    flex-container has class <code class="p-1">.flex-wrap-reverse</code>, the flex items
+                                    will wrap on the second row in reverse order, each getting 50%. The centered
+                                    alignment of the third sibling (now situated on the first row) is given by the <code
+                                        class="p-1">.justify-content-center</code> class.</p>
+                                <div
+                                    class="d-flex flex-wrap-reverse justify-content-center text-center bg-alt rounded-5">
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 1</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 2</p>
+                                    </div>
+                                    <div class="w-50">
+                                        <p class="bg rounded-5 p-3 m-1">Flex item 3</p>
+                                    </div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex flex-wrap-reverse justify-content-center"&gt;
+        &lt;div class="w-50"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="w-50"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>All of the three classes mentioned, <code class="p-1">.flex-nowrap</code>, <code
+                                        class="p-1">.flex-wrap</code> and <code class="p-1">.flex-wrap-reverse</code>
+                                    have their responsive variations,
+                                    denoted by <code class="p-1">.flex-{breakpoint}-nowrap</code>, <code
+                                        class="p-1">.flex-{breakpoint}-wrap</code> and <code
+                                        class="p-1">.flex-{breakpoint}-wrap-reverse</code> respectively.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Order</h2>
+                                </div>
+
+                                <p>The <code class="p-1">.order-*</code> class is used to specify a pre-defined order of
+                                    the flex items. There is a set of 6 pre-defined values, which can be easily extended
+                                    with additional values if needed.</p>
+
+                                <div class="d-flex text-center bg-alt rounded-5">
+                                    <div class="rounded-5 flex-fill order-3 bg p-3 m-1">Flex item 1</div>
+                                    <div class="rounded-5 flex-fill order-2 bg p-3 m-1">Flex item 2</div>
+                                    <div class="rounded-5 flex-fill order-1 bg p-3 m-1">Flex item 3</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="order-3"&gt;Flex item 1&lt;/div&gt;
+        &lt;div class="order-2"&gt;Flex item 2&lt;/div&gt;
+        &lt;div class="order-1"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>The <code class="p-1">.order-*</code> classes have responsive variations,
+                                    denoted by <code class="p-1">.order-{breakpoint}-*</code>. Additionally, there are
+                                    the <code class="p-1">.order-first</code> and <code class="p-1">.order-last</code>
+                                    classes that change the order of an element by applying order -1 and 6 respectively.
+                                    These have responsive variations as well.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Center Position</h2>
+                                </div>
+
+                                <p>There are multiple ways of centering content in Haze. One of them is using the <code
+                                        class="p-1">.flex-center</code> class and makes use of the <code
+                                        class="p-1">display: flex</code>, <code class="p-1">align-items:center</code>
+                                    and <code class="p-1">justify-content: center</code> properties and does not have
+                                    any further requriements.</p>
+
+                                <div class="position-relative content-center bg rounded-5 m-5"
+                                    style="min-height: 180px;">
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="position-relative rounded-5 flex-center bg"&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>The <code class="p-1">.flex-center</code> class offers a condensed version of the
+                                    declaration, providing the same properties and achieving identical results as <code
+                                        class="p-1">.d-flex .align-items-center .justify-content-center</code>.</p>
+
+                                <div class="position-relative d-flex align-items-center justify-content-center bg rounded-5 m-5"
+                                    style="min-height: 180px;">
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                    <div class="bg-alt rounded-5 p-4 m-2"></div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="position-relative rounded-5 d-flex align-items-center justify-content-center bg"&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+        &lt;div class=class="bg-alt rounded-5 p-4 m-2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>There is an alternate method that makes use of the position utilities; More
+                                    information will be provided in the <a href="position.html">Utilities/
+                                        Position</a> section.</p>
+                            </div>
+
+                            <div class="pb-5">
+                                <div class="d-flex">
+                                    <h2 class="text-accent p-0 m-0">#&nbsp;</h2>
+                                    <h2 class="p-0 m-0">Grow and Shrink</h2>
+                                </div>
+
+                                <blockquote>
+                                    This functionality has been marked as deprecated starting from Haze 1.0.1 and is
+                                    slated for removal in Haze 1.1.0 due to its infrequent usage. Any functionalities
+                                    relying on the adjacent classes <code class="p-1">.flex-grow-*</code> or <code
+                                        class="p-1">.flex-shrink-*</code> can be substituted by explicitly declaring
+                                    <code class="p-1">.flex-fill</code> on the necessary flex items.
+                                </blockquote>
+
+                                <p>The <code class="p-1">.flex-grow-*</code> class is used to toggle a flex item's
+                                    ability to grow to fill the available space. For instance, in the below example, the
+                                    <code class="p-1">.flex-grow-1</code> element used all the available space, while
+                                    allowing the remaining two items their necessary space.
+                                </p>
+
+                                <div class="d-flex rounded-5 text-center bg-alt">
+                                    <div class="bg rounded-5 flex-grow-1 p-3 m-1">Flex item</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item</div>
+                                    <div class="bg rounded-5 p-3 m-1">Flex item</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="bg flex-grow-1"&gt;
+            Flex item
+        &lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item&lt;/div&gt;
+        &lt;div class="bg"&gt;Flex item&lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>The <code class="p-1">.flex-shrink-*</code> class is used to toggle a flex item's
+                                    ability to shrink in order to let other siblings fill the available space. For
+                                    instance, in the below example, the <code class="p-1">.flex-shrink-1</code> element
+                                    wraps to a new row, while allowing the remaining two items their necessary space.
+                                </p>
+
+                                <div class="d-flex rounded-5 text-center bg-alt">
+                                    <div class="bg rounded-5 w-100 p-3 m-1">Flex item</div>
+                                    <div class="bg rounded-5 w-100 p-3 m-1">Flex item</div>
+                                    <div class="bg rounded-5 flex-shrink-1 p-3 m-1">Flex item</div>
+                                </div>
+
+                                <pre><code>
+    &lt;div class="d-flex"&gt;
+        &lt;div class="bg w-100"&gt;Flex item&lt;/div&gt;
+        &lt;div class="bg w-100"&gt;Flex item&lt;/div&gt;
+        &lt;div class="bg flex-shrink-1"&gt;
+            Flex item
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+</code></pre>
+
+                                <p>The <code class="p-1">.order-*</code> classes have responsive variations,
+                                    denoted by <code class="p-1">.order-{breakpoint}-*</code>. Additionally, there are
+                                    the <code class="p-1">.order-first</code> and <code class="p-1">.order-last</code>
+                                    classes that change the order of an element by applying order -1 and 6 respectively.
+                                    These have responsive variations as well.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark pt-5 pb-2 m-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 content-center">
+                    <img class="footer-logo" src="../../img/placeholder_light.png" width="200px" alt="website logo"></a>
+                </div>
+                <div class="col-lg-8 col-md-12 d-none d-md-block">
+                    <div class="d-flex flex-row flex-nowrap content-center">
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Getting started</p>
+                            <a class="text-nowrap pb-2" href="#">Introduction</a>
+                            <a class="text-nowrap pb-2" href="#">Installation</a>
+                            <a class="text-nowrap pb-2" href="#">Support</a>
+                        </div>
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Core concepts</p>
+                            <a class="text-nowrap pb-2" href="#">Helpers and Utilities</a>
+                            <a class="text-nowrap pb-2" href="#">Responsive Design</a>
+                            <a class="text-nowrap pb-2" href="#">Dark/ Light Mode</a>
+                        </div>
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Support Haze</p>
+                            <a class="text-nowrap pb-2" href="#">Sponsor on GitHub</a>
+                            <a class="text-nowrap pb-2" href="#">Sponsor on Patreon</a>
+                            <a class="text-nowrap pb-2" href="#">Buy us some coffee</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 d-md-none">
+                    <div class="d-flex flex-row flex-wrap content-center">
+                        <div class="d-flex flex-column px-5 py-5">
+                            <p class="text-nowrap">Getting started</p>
+                            <a class="pb-2" href="#">Introduction</a>
+                            <a class="pb-2" href="#">Installation</a>
+                            <a class="pb-2" href="#">Support</a>
+                            <p class="text-nowrap">Core concepts</p>
+                            <a class="pb-2" href="#">Helpers and Utilities</a>
+                            <a class="pb-2" href="#">Responsive Design</a>
+                            <a class="pb-2" href="#">Dark/ Light Mode</a>
+                            <p class="text-nowrap">Support Haze</p>
+                            <a class="pb-2" href="#">Sponsor on GitHub</a>
+                            <a class="pb-2" href="#">Sponsor on Patreon</a>
+                            <a class="pb-2" href="#">Buy us some coffee</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center pt-5 pb-0 m-0">
+                Designed and developed by <a href="https://serbanelyan.com/">SerbanElyan</a> using
+                HazeCSS pre-release 1.0.1 &copy; 2024 HazeCSS
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../src/js/haze-plus-plus.js" defer></script>
+    <script src="../../src/js/handler.js" defer></script>
+</body>
+
+</html>

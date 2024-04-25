@@ -1,11 +1,11 @@
 /*
- * Haze v1.0.0 (https://hazecss.com/)
+ * Haze v1.0.1 (https://hazecss.com/)
  * Developed by Serban Elyan (https://serbanelyan.com/)
- * Git (https://github.com/)
+ * Git (https://github.com/serbanelyan/hazecss)
  */
 
 * {
-    /* outline: 1px solid var(--magenta); */
+    outline: 1px solid var(--magenta);
     /* border: 1px solid var(--magenta); */
 }
 
@@ -130,7 +130,8 @@ h6 {
     h5,
     h6 {
         color: var(--text-bright);
-    }}
+    }
+}
 
 
 h1 {
@@ -335,7 +336,7 @@ q {
     }
 }
 
-blockquote > footer {
+blockquote>footer {
     font-style: normal;
     border: 0;
 }
@@ -356,8 +357,8 @@ mark strong {
     color: var(--text-black) !important;
 }
 
-a > code,
-a > strong {
+a>code,
+a>strong {
     color: inherit;
 }
 
@@ -484,6 +485,7 @@ input[type='button'] {
 }
 
 @media (prefers-color-scheme: dark) {
+
     input[type='submit'],
     input[type='reset'],
     input[type='button'] {
@@ -498,6 +500,7 @@ input[type='button']:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+
     input[type='submit']:hover,
     input[type='reset']:hover,
     input[type='button']:hover {
@@ -530,6 +533,7 @@ input[type='range'],
 select,
 button,
 textarea {
+    appearance: none;
     -webkit-appearance: none;
 }
 
@@ -588,6 +592,7 @@ textarea:focus {
 }
 
 @media (prefers-color-scheme: dark) {
+
     input:focus,
     select:focus,
     button:focus,
@@ -622,6 +627,7 @@ textarea:disabled {
 }
 
 @media (prefers-color-scheme: dark) {
+
     ::-moz-placeholder,
     :-ms-input-placeholder,
     ::-ms-input-placeholder,
@@ -784,6 +790,7 @@ input[type='range']:focus::-ms-fill-lower {
 }
 
 @media (prefers-color-scheme: dark) {
+
     input[type='range']:focus::-ms-fill-upper,
     input[type='range']:focus::-ms-fill-lower {
         background: var(--background);
@@ -803,14 +810,17 @@ a {
 
 a:hover {
     color: var(--link-hover);
+    cursor: pointer !important;
 }
 
 a:visited {
     color: var(--link-visited);
+    cursor: pointer !important;
 }
 
 a:visited:hover {
     color: var(--link-hover);
+    cursor: pointer !important;
 }
 
 code {
@@ -873,7 +883,7 @@ time {
     }
 }
 
-pre > code {
+pre>code {
     padding: 10px;
     display: block;
     overflow-x: auto;
@@ -1051,6 +1061,7 @@ tbody tr:nth-child(even) button:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+
     ::-moz-selection,
     ::selection {
         color: var(--text-bright);
@@ -1079,7 +1090,7 @@ details[open] {
     padding: 10px;
 }
 
-details >  :last-child {
+details> :last-child {
     margin-bottom: 0;
 }
 
@@ -1102,7 +1113,7 @@ summary {
     }
 }
 
-details >  :not(summary) {
+details> :not(summary) {
     margin-top: 0;
 }
 
@@ -1116,7 +1127,7 @@ summary::-webkit-details-marker {
     }
 }
 
-details > summary {
+details>summary {
     list-style: none;
 }
 
@@ -1141,7 +1152,7 @@ dialog {
     }
 }
 
-dialog > header:first-child {
+dialog>header:first-child {
     background-color: var(--background);
     border-radius: 6px 6px 0 0;
     margin: -10px -30px 10px;
@@ -1150,7 +1161,7 @@ dialog > header:first-child {
 }
 
 @media (prefers-color-scheme: dark) {
-    dialog > header:first-child {
+    dialog>header:first-child {
         background-color: var(--background);
     }
 }
@@ -1183,7 +1194,7 @@ footer {
     }
 }
 
-body > footer {
+body>footer {
     margin-top: 40px;
 }
 
