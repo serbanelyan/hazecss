@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Layout | HazeCSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../img/placeholder_light.png" alt="website logo" height="16px">
+    <link rel="icon" type="image/x-icon" href="../../img/icon/favicon.svg" alt="website logo" height="16px">
 
     <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
     <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
@@ -16,8 +16,11 @@
     <nav class="navbar fixed-top bg-main shadow-sm">
         <div class="container nav-container">
             <div class="container d-flex justify-content-between p-0">
-                <a href="#" class="d-flex" alt="website logo">
-                    <img class="nav-logo" src="../../img/placeholder_light.png" width="48px" alt="website logo"></a>
+                <a href="../../index.html" class="d-flex" alt="website logo">
+                    <img class="nav-logo d-dark" src="../../img/icon/logo_large_light.svg" width="48px"
+                        alt="website logo">
+                    <img class="nav-logo d-light" src="../../img/icon/logo_large_dark.svg" width="48px"
+                        alt="website logo"></a>
                 <button id="nav-toggle" class="nav-toggle">
                     <span class="nav-toggle-icon"></span>
                 </button>
@@ -25,13 +28,17 @@
             <div id="navbar-collapse" class="navbar-collapse collapsed">
                 <div class="nav-list d-flex">
                     <a class="nav-link" href="../../index.html">Home</a>
-                    <a class="nav-link active" href="docs/getting-started/introduction.html">Docs</a>
+                    <a class="nav-link active" href="../getting-started/introduction.html">Docs</a>
                     <a class="nav-link" href="../../demo/index.html">Demo</a>
                     <a class="nav-link" href="../../downloads.html">Downloads</a>
-                    <a class="nav-icon" href="https://github.com/serbanelyan/hazecss"><img
-                            src="../../img/placeholder_light.png" width="28px" alt="Git"></a>
-                    <a class="nav-icon" href="#"><img src="../../img/placeholder_light.png" width="28px"
-                            alt="Donate"></a>
+                    <a class="nav-icon d-dark" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/icon/git_light.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-light" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/icon/git_dark.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-dark" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_light.svg" width="36px" alt="Donate"></a>
+                    <a class="nav-icon d-light" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_dark.svg" width="36px" alt="Donate"></a>
                 </div>
             </div>
         </div>
@@ -134,12 +141,12 @@
                     <div class="container p-0">
                         <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
                             scroll-into-view="true" scroll-offset="62">
-                            <div class="breadcrumb bg-alt p-3">
-                                <button id="breadcrumb-menu-toggle" class="breadcrumb-menu-toggle">
+                            <div class="breadcrumb bg-alt p-3" id="breadcrumb-menu-toggle">
+                                <button class="breadcrumb-menu-toggle">
                                     <span class="breadcrumb-menu-toggle-icon"></span>
                                 </button>
-                                <a class="breadcrumb-item" href="breakpoints.html">Layout</a>
-                                <a class="breadcrumb-item active" href="gutters.html">Gutters</a>
+                                <a class="breadcrumb-item">Layout</a>
+                                <a class="breadcrumb-item active">Gutters</a>
                             </div>
                             <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
                                 id="breadcrumb-collapse">

@@ -46,10 +46,6 @@
 }
 
 .heading-icon img {
-    height: 80px !important;
-    width: 80px !important;
-    max-height: 80px !important;
-    max-width: 80px !important;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -80,6 +76,10 @@
 #haze-responsive-range input[type='range'] {
     width: 100%;
 }
+/* 
+input {
+    box-sizing: border-box;
+} */
 
 #haze-responsive-demo .code-content {
     overflow-y: scroll;
@@ -202,7 +202,7 @@
 
 .bg-abstract {
     clip: rect(0, auto, auto, 0);
-    background: url('../../img/abstract-white.webp');
+    background-image: url('../../img/background/1-05.jpg');
     background-size: cover;
     background-position: center center;
     position: absolute;
@@ -217,7 +217,7 @@
 
 .bg-overlay {
     clip: rect(0, auto, auto, 0);
-    background: var(--background-dark-main);
+    /* background: var(--background-dark-main); */
     position: absolute;
     height: 100%;
     width: 100%;
@@ -242,7 +242,7 @@ figure {
 }
 
 #fixed {
-    background-image: url('../../img/abstract-white.webp');
+    background-image: url('../../img/background/1-05.jpg');
     position: fixed;
     display: block;
     top: 0;
