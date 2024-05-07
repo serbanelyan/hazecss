@@ -2,7 +2,7 @@
 
 # Features
 
-- Added `.d-dark` and `d-light` for dynamically setting the display property based on user preferred mode
+- Added `.d-dark` and `.d-light` for dynamically setting the display property based on user preferred mode
 
 # Improvements
 
