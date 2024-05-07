@@ -1,3 +1,18 @@
+## 1.0.2
+
+# Features
+
+- Added `.d-dark` and `d-light` for dynamically setting the display property based on user preferred mode
+
+# Improvements
+
+- Removed the icon sizing from the CSS file; This can be defined via HTML attributes
+
+# Bugfixes
+
+- Fixed the function responsible for the debug outline toggling that was only activating on the second press
+- Fixed box sizing in order to prevent input fields from overlapping the form boundaries
+
 ## 1.0.1
 
 # Features

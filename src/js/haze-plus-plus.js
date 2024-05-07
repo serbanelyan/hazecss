@@ -20,14 +20,12 @@ function scrollOffset(element, offset = 64, behavior = 'smooth') {
 };
 
 document.addEventListener('keydown', (event) => {
-    var keyCode = event.code;
-
-    if (keyCode == 'Backslash') {
+    if (event.code == 'Backslash') {
         const bodyClasses = document.body.classList;
-        const isDebugOn = bodyClasses.contains('debug');
-        bodyClasses.toggle('debug', !isDebugOn);
-        bodyClasses.toggle('on', !isDebugOn);
-        bodyClasses.toggle('off', isDebugOn);
+        if (bodyClasses.contains('debug')) {
+            bodyClasses.toggle('on');
+            bodyClasses.toggle('off');
+        }
     }
 }, false);
 
@@ -55,16 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 breadcrumbList.classList.remove('collapsed');
 
                 document.body.classList.add('overflow-hidden', 'position-relative');
-                document.documentElement.classList.add('overflow-hidden', 'position-relative');                
+                document.documentElement.classList.add('overflow-hidden', 'position-relative');
 
-                if(breadcrumbContainer.getAttribute('scroll-into-view') === "true") {
+                if (breadcrumbContainer.getAttribute('scroll-into-view') === "true") {
                     offset = breadcrumbContainer.getAttribute('scroll-offset') ?? 0;
                     scrollOffset('breadcrumb-container', offset);
                 }
             } else {
                 document.body.classList.remove('overflow-hidden', 'position-relative');
-                document.documentElement.classList.remove('overflow-hidden', 'position-relative');                
-                
+                document.documentElement.classList.remove('overflow-hidden', 'position-relative');
+
                 breadcrumbList.classList.add('collapsed');
             }
         });
