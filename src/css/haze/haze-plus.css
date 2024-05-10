@@ -1,5 +1,5 @@
 /*
- * Haze v1.0.2 (https://hazecss.com/)
+ * Haze v1.0.3 (https://hazecss.com/)
  * Developed by Serban Elyan (https://serbanelyan.com/)
  * Git (https://github.com/serbanelyan/hazecss)
  */
@@ -16,13 +16,15 @@
 
 :root,
 .bg-auto *,
-.bg-light * {
+.bg-light *,
+*.bg-auto,
+*.bg-light {
     --magenta: #ff00ff;
 
     --accent: #0074cc;
-    --accent-hover: #0091ff;
-    --accent-alt: #22547a;
-    --accent-alt-hover: #22547a;
+    --accent-hover: #0f93ff;
+    --accent-alt: #00599e;
+    --accent-alt-hover: #0074cc;
 
     --background: #eee;
     --background-main: #fff;
@@ -39,7 +41,7 @@
     --text-main: #333;
     --text-bright: #000;
     --text-dark: #fff;
-    --text-muted: #777;
+    --text-muted: #595959;
 
     --text-white: #fff;
     --text-black: #000;
@@ -57,9 +59,9 @@
     --button-tertiary: transparent;
     --button-hover-tertiary: #fafafa;
 
-    --link: #0091ff;
-    --link-hover: #006fc4;
-    --link-visited: #0091ff;
+    --link: #00599e;
+    --link-hover: #0074cc;
+    --link-visited: #00599e;
 
     --variable: #d941e2;
     --highlight: #ffff00;
@@ -68,19 +70,6 @@
     --border: #dbdbdb;
     --form-text: #1d1d1d;
     --form-placeholder: #949494;
-
-    --code: #333;
-    --code-punctuation: #333;
-    --code-element: #0065b3;
-    --code-attr-name: #0098d4;
-    --code-attr-value: #ff6600;
-    --code-class: #ffae00;
-    --code-value: #00d62e;
-    --code-media: #b930c0;
-
-    --code-close: #ff5f58;
-    --code-minimize: #ffbd2e;
-    --code-fullscreen: #28ca42;
 
     --shadow: 0 10px 35px rgba(0, 0, 0, 0.075);
     --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.075);
@@ -93,8 +82,8 @@
     --page-width-xl: 1100px;
     --page-width-xxl: 1260px;
 
-    --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
-    
+    --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23161f27'/%3E%3C/svg%3E");
+
     --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: Georgia, "Times New Roman", Times, serif, Cambria, "Palatino Linotype", "Book Antiqua", "Lucida Bright", "Garamond", "EB Garamond", "Crimson Text", "Arno Pro", "Hoefler Text";
     --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -105,13 +94,14 @@
 @media (prefers-color-scheme: dark) {
 
     :root,
-    .bg-auto * {
+    .bg-auto *,
+    *.bg-auto {
         --magenta: #ff00ff;
 
         --accent: #0074cc;
-        --accent-hover: #0091ff;
-        --accent-alt: #22547a;
-        --accent-alt-hover: #22547a;
+        --accent-hover: #0f93ff;
+        --accent-alt: #00599e;
+        --accent-alt-hover: #0074cc;
 
         --background: #161f27;
         --background-main: #202b38;
@@ -146,8 +136,9 @@
         --button-tertiary: transparent;
         --button-hover-tertiary: #1c2530;
 
-        --link: #0091ff;
-        --link-hover: #006fc4;
+        --link: #0f93ff;
+        --link-hover: #0074cc;
+        --link-visited: #0f93ff;
 
         --variable: #d941e2;
         --highlight: #efdb43;
@@ -156,19 +147,6 @@
         --border: #526980;
         --form-text: #fff;
         --form-placeholder: #a9a9a9;
-
-        --code: #dbdbdb;
-        --code-punctuation: #dbdbdb;
-        --code-element: #006fc4;
-        --code-attr-name: #00b7ff;
-        --code-attr-value: #ff9130;
-        --code-class: #ffce65;
-        --code-value: #acf0bb;
-        --code-media: #d941e2;
-
-        --code-close: #ff5f58;
-        --code-minimize: #ffbd2e;
-        --code-fullscreen: #28ca42;
 
         --shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
         --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -181,7 +159,8 @@
         --page-width-xl: 1100px;
         --page-width-xxl: 1260px;
 
-        --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+        --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23efefef'/%3E%3C/svg%3E");
+
         --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         --font-serif: Georgia, "Times New Roman", Times, serif, Cambria, "Palatino Linotype", "Book Antiqua", "Lucida Bright", "Garamond", "EB Garamond", "Crimson Text", "Arno Pro", "Hoefler Text";
         --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -190,13 +169,15 @@
 }
 
 .bg-reverse *,
-.bg-dark * {
+.bg-dark *,
+*.bg-reverse,
+*.bg-dark {
     --magenta: #ff00ff;
 
     --accent: #0074cc;
-    --accent-hover: #0091ff;
-    --accent-alt: #22547a;
-    --accent-alt-hover: #22547a;
+    --accent-hover: #0f93ff;
+    --accent-alt: #00599e;
+    --accent-alt-hover: #0074cc;
 
     --background: #161f27;
     --background-main: #202b38;
@@ -230,8 +211,9 @@
     --button-tertiary: transparent;
     --button-hover-tertiary: transparent;
 
-    --link: #0091ff;
-    --link-hover: #006fc4;
+    --link: #0f93ff;
+    --link-hover: #0074cc;
+    --link-visited: #0f93ff;
 
     --variable: #d941e2;
     --highlight: #efdb43;
@@ -240,19 +222,6 @@
     --border: #526980;
     --form-text: #fff;
     --form-placeholder: #a9a9a9;
-
-    --code: #dbdbdb;
-    --code-punctuation: #dbdbdb;
-    --code-element: #006fc4;
-    --code-attr-name: #00b7ff;
-    --code-attr-value: #ff9130;
-    --code-class: #ffce65;
-    --code-value: #acf0bb;
-    --code-media: #d941e2;
-
-    --code-close: #ff5f58;
-    --code-minimize: #ffbd2e;
-    --code-fullscreen: #28ca42;
 
     --shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
     --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -265,7 +234,8 @@
     --page-width-xl: 1100px;
     --page-width-xxl: 1260px;
 
-    --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+    --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23efefef'/%3E%3C/svg%3E");
+
     --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: Georgia, "Times New Roman", Times, serif, Cambria, "Palatino Linotype", "Book Antiqua", "Lucida Bright", "Garamond", "EB Garamond", "Crimson Text", "Arno Pro", "Hoefler Text";
     --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -273,13 +243,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .bg-reverse * {
+    .bg-reverse *,
+    *.bg-reverse {
         --magenta: #ff00ff;
 
         --accent: #0074cc;
-        --accent-hover: #0091ff;
-        --accent-alt: #22547a;
-        --accent-alt-hover: #22547a;
+        --accent-hover: #0f93ff;
+        --accent-alt: #00599e;
+        --accent-alt-hover: #0074cc;
 
         --background: #eee;
         --background-main: #fff;
@@ -295,7 +266,7 @@
         --text-main: #333;
         --text-bright: #000;
         --text-dark: #fff;
-        --text-muted: #777;
+        --text-muted: #595959;
 
         --text-white: #fff;
         --text-black: #000;
@@ -308,14 +279,14 @@
         --button-hover: #ddd;
         --button-primary: var(--accent);
         --button-hover-primary: var(--accent-hover);
-        --button-secondary: #eee;
-        --button-hover-secondary: #ddd;
+        --button-secondary: #ddd;
+        --button-hover-secondary: #eee;
         --button-tertiary: transparent;
         --button-hover-tertiary: #fafafa;
 
-        --link: #0091ff;
-        --link-hover: #006fc4;
-        --link-visited: #0091ff;
+        --link: #00599e;
+        --link-hover: #0074cc;
+        --link-visited: #00599e;
 
         --variable: #d941e2;
         --highlight: #ffff00;
@@ -324,19 +295,6 @@
         --border: #dbdbdb;
         --form-text: #1d1d1d;
         --form-placeholder: #949494;
-
-        --code: #333;
-        --code-punctuation: #333;
-        --code-element: #0065b3;
-        --code-attr-name: #0098d4;
-        --code-attr-value: #ff6600;
-        --code-class: #ffae00;
-        --code-value: #00d62e;
-        --code-media: #b930c0;
-
-        --code-close: #ff5f58;
-        --code-minimize: #ffbd2e;
-        --code-fullscreen: #28ca42;
 
         --shadow: 0 10px 35px rgba(0, 0, 0, 0.075);
         --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.075);
@@ -349,7 +307,8 @@
         --page-width-xl: 1100px;
         --page-width-xxl: 1260px;
 
-        --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+        --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23161f27'/%3E%3C/svg%3E");
+
         --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         --font-serif: Georgia, "Times New Roman", Times, serif, Cambria, "Palatino Linotype", "Book Antiqua", "Lucida Bright", "Garamond", "EB Garamond", "Crimson Text", "Arno Pro", "Hoefler Text";
         --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -526,6 +485,10 @@ button {
     border: none;
 }
 
+a.button {
+    text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
     button {
         color: var(--form-text);
@@ -533,20 +496,25 @@ button {
     }
 }
 
-button:hover {
-    background: var(--button-hover);
-}
-
-@media (prefers-color-scheme: dark) {
+@media (hover: hover) {
     button:hover {
         background: var(--button-hover);
     }
 }
 
-button:hover,
-a.button:hover,
-input[type='button']:hover {
-    color: var(--form-text);
+@media (prefers-color-scheme: dark) and (hover: hover) {
+    button:hover {
+        background: var(--button-hover);
+    }
+}
+
+@media (hover: hover) {
+
+    button:hover,
+    a.button:hover,
+    input[type='button']:hover {
+        color: var(--form-text);
+    }
 }
 
 button.primary,
@@ -556,11 +524,14 @@ input[type='button'].primary {
     color: var(--text-white);
 }
 
-button.primary:hover,
-a.button.primary:hover,
-input[type='button'].primary:hover {
-    background: var(--button-hover-primary);
-    color: var(--text-white);
+@media (hover: hover) {
+
+    button.primary:hover,
+    a.button.primary:hover,
+    input[type='button'].primary:hover {
+        background: var(--button-hover-primary);
+        color: var(--text-white);
+    }
 }
 
 button.secondary,
@@ -569,10 +540,13 @@ input[type='button'].secondary {
     background-color: var(--button-secondary);
 }
 
-button.secondary:hover,
-a.button.secondary:hover,
-input[type='button'].secondary:hover {
-    background-color: var(--button-hover-secondary);
+@media (hover: hover) {
+
+    button.secondary:hover,
+    a.button.secondary:hover,
+    input[type='button'].secondary:hover {
+        background-color: var(--button-hover-secondary);
+    }
 }
 
 button.tertiary,
@@ -581,10 +555,13 @@ input[type='button'].tertiary {
     background-color: var(--button-tertiary);
 }
 
-button.tertiary:hover,
-a.button.tertiary:hover,
-input[type='button'].tertiary:hover {
-    background: var(--button-hover-tertiary);
+@media (hover: hover) {
+
+    button.tertiary:hover,
+    a.button.tertiary:hover,
+    input[type='button'].tertiary:hover {
+        background: var(--button-hover-tertiary);
+    }
 }
 
 .focus-ring-none *:focus,
@@ -849,14 +826,17 @@ input[type='button'] {
     }
 }
 
-input[type='submit']:hover,
-input[type='reset']:hover,
-input[type='button']:hover {
-    background: var(--button-hover);
-    color: var(--form-text);
+@media (hover: hover) {
+
+    input[type='submit']:hover,
+    input[type='reset']:hover,
+    input[type='button']:hover {
+        background: var(--button-hover);
+        color: var(--form-text);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
 
     input[type='submit']:hover,
     input[type='reset']:hover,
@@ -1155,8 +1135,8 @@ input[type='range']:focus::-ms-fill-lower {
     }
 }
 
-a {
-    text-decoration: none;
+a:not(.button) {
+    text-decoration: underline;
     color: var(--link);
 }
 
@@ -1166,9 +1146,11 @@ a {
     }
 }
 
-a:hover {
-    color: var(--link-hover);
-    cursor: pointer !important;
+@media (hover: hover) {
+    a:hover {
+        color: var(--link-hover);
+        cursor: pointer !important;
+    }
 }
 
 a:visited {
@@ -1176,9 +1158,11 @@ a:visited {
     cursor: pointer !important;
 }
 
-a:visited:hover {
-    color: var(--link-hover);
-    cursor: pointer !important;
+@media (hover: hover) {
+    a:visited:hover {
+        color: var(--link-hover);
+        cursor: pointer !important;
+    }
 }
 
 a.button {
@@ -1196,10 +1180,12 @@ a.button {
     border: none;
 }
 
-a.button:hover {
-    cursor: pointer;
-    background-color: var(--button-hover);
-    color: var(--form-text);
+@media (hover: hover) {
+    a.button:hover {
+        cursor: pointer;
+        background-color: var(--button-hover);
+        color: var(--form-text);
+    }
 }
 
 code {
@@ -1396,11 +1382,13 @@ tbody tr:nth-child(even) button {
     }
 }
 
-tbody tr:nth-child(even) button:hover {
-    background-color: var(--background-body);
+@media (hover: hover) {
+    tbody tr:nth-child(even) button:hover {
+        background-color: var(--background-body);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
     tbody tr:nth-child(even) button:hover {
         background-color: var(--background-body);
     }
@@ -1433,11 +1421,13 @@ tbody tr:nth-child(even) button:hover {
     }
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-thumb-hover);
+@media (hover: hover) {
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollbar-thumb-hover);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
     ::-webkit-scrollbar-thumb:hover {
         background: var(--scrollbar-thumb-hover);
     }
@@ -1586,7 +1576,8 @@ body>footer {
     margin-top: 40px;
 }
 
-input, form {
+input,
+form {
     box-sizing: border-box;
 }
 
@@ -1714,7 +1705,7 @@ input, form {
     flex-direction: row;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.99px) {
     .swap-sm {
         flex-direction: column-reverse;
     }
@@ -1725,7 +1716,7 @@ input, form {
     flex-direction: row;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.99px) {
     .swap-md {
         flex-direction: column-reverse;
     }
@@ -1736,7 +1727,7 @@ input, form {
     flex-direction: row;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.99px) {
     .swap-lg {
         flex-direction: column-reverse;
     }
@@ -1800,7 +1791,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
 
     .container-xl,
     .container-lg,
@@ -1811,7 +1802,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
 
     .container-xxl,
     .container-xl,
@@ -2005,7 +1996,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .col-xl {
         flex: 1 0 0%;
     }
@@ -2046,7 +2037,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .col-xxl {
         flex: 1 0 0%;
     }
@@ -2781,7 +2772,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .col-xl-auto {
         flex: 0 0 auto;
         width: auto;
@@ -2956,7 +2947,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .col-xxl-auto {
         flex: 0 0 auto;
         width: auto;
@@ -5585,7 +5576,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .d-xl-inline {
         display: inline !important;
     }
@@ -6189,7 +6180,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .d-xxl-inline {
         display: inline !important;
     }
@@ -6926,7 +6917,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .sticky-xl-top {
         position: -webkit-sticky;
         position: sticky;
@@ -6935,7 +6926,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .sticky-xxl-top {
         position: -webkit-sticky;
         position: sticky;
@@ -6978,7 +6969,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .sticky-xl-bottom {
         position: -webkit-sticky;
         position: sticky;
@@ -6987,7 +6978,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .sticky-xxl-bottom {
         position: -webkit-sticky;
         position: sticky;
@@ -10150,7 +10141,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .float-xl-start {
         float: left !important;
     }
@@ -10802,7 +10793,7 @@ input, form {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1260px) {
     .float-xxl-start {
         float: left !important;
     }
@@ -11454,7 +11445,7 @@ input, form {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .fs-1 {
         font-size: 2.5rem !important;
     }
@@ -11515,7 +11506,7 @@ input, form {
 }
 
 /* Extra small (xs) devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
+/* No media query */
 
 /* Small (sm) devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) {} */
@@ -11526,5 +11517,8 @@ input, form {
 /* Large (lg) devices (desktops, 992px and up) */
 /* @media (min-width: 992px) {} */
 
-/* Extra (xl) large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {} */
+/* Extra (xl) large devices (large desktops, 1100px and up) */
+/* @media (min-width: 1100px) {} */
+
+/* Extra (xxl) large devices (large desktops, 1260px and up) */
+/* @media (min-width: 1260px) {} */

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Core Concepts | HazeCSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta title="HazeCSS | Modern development simplified">
+    <meta name="description"
+        content="HazeCSS is a powerfull, extensible and lightweight framework designed for modern platforms featuring ready-to-use components, flexible layout, and minimalistic styling.">
+    <meta name="keywords"
+        content="Frontend, Web, Graphic, Design, Development, HTML, CSS, JavaScript, jQuerry, Framework">
+    <meta name="author" content="Neghea Serban Elian">
+    <meta name="theme-color" content="#FFF" />
+
     <link rel="icon" type="image/x-icon" href="../../img/icon/favicon.svg" alt="website logo" height="16px">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
     <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
@@ -17,10 +26,11 @@
         <div class="container nav-container">
             <div class="container d-flex justify-content-between p-0">
                 <a href="../../index.html" class="d-flex" alt="website logo">
-                    <img class="nav-logo d-dark" src="../../img/icon/logo_large_light.svg" width="48px" alt="website logo">
+                    <img class="nav-logo d-dark" src="../../img/icon/logo_large_light.svg" width="48px"
+                        alt="website logo">
                     <img class="nav-logo d-light" src="../../img/icon/logo_large_dark.svg" width="48px"
                         alt="website logo"></a>
-                <button id="nav-toggle" class="nav-toggle">
+                <button id="nav-toggle" class="nav-toggle" aria-label="menu">
                     <span class="nav-toggle-icon"></span>
                 </button>
             </div>
@@ -31,15 +41,13 @@
                     <a class="nav-link" href="../../demo/index.html">Demo</a>
                     <a class="nav-link" href="../../downloads.html">Downloads</a>
                     <a class="nav-icon d-dark" href="https://github.com/serbanelyan/hazecss"><img
-                        src="../../img/icon/git_light.svg" width="36px" alt="Git"></a>
-                <a class="nav-icon d-light" href="https://github.com/serbanelyan/hazecss"><img
-                        src="../../img/icon/git_dark.svg" width="36px" alt="Git"></a>
-                <a class="nav-icon d-dark" href="https://buymeacoffee.com/serbanelyan
-                "><img src="../../img/icon/coffee_light.svg" width="36px"
-                        alt="Donate"></a>
-                <a class="nav-icon d-light" href="https://buymeacoffee.com/serbanelyan
-                "><img src="../../img/icon/coffee_dark.svg" width="36px"
-                        alt="Donate"></a>
+                            src="../../img/icon/git_light.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-light" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/icon/git_dark.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-dark" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_light.svg" width="36px" alt="Donate"></a>
+                    <a class="nav-icon d-light" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_dark.svg" width="36px" alt="Donate"></a>
                 </div>
             </div>
         </div>
@@ -140,12 +148,12 @@
                         <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
                             scroll-into-view="true" scroll-offset="62">
                             <div class="breadcrumb bg-alt p-3" id="breadcrumb-menu-toggle">
-                                <button class="breadcrumb-menu-toggle">
+                                <button class="breadcrumb-menu-toggle" aria-label="breadcrumb menu">
                                     <span class="breadcrumb-menu-toggle-icon"></span>
                                 </button>
-                                <a class="breadcrumb-item">Core Concepts</a>
-                                <a class="breadcrumb-item active">Helpers &
-                                    Utilities</a>
+                                <div class="breadcrumb-item">Core Concepts</div>
+                                <div class="breadcrumb-item active">Helpers &
+                                    Utilities</div>
                             </div>
                             <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
                                 id="breadcrumb-collapse">
@@ -438,10 +446,17 @@
 
                                 <p>There is a wide range of display classes used in the example above, as follow:</p>
                                 <ul>
-                                    <li>The <code class="p-1">.d-flex</code> class is used to apply flexbox behavior to the container, allowing its children to be laid out in a flexible manner along a specified axis</li>
-                                    <li>The <code class="p-1">.d-none</code> class is used to to hide the element from display, effectively rendering it invisible on the webpage</li>
-                                    <li>The <code class="p-1">.d-lg-block</code> class is used to to make the element visible and displayed as a block-level element only on large screens and above, while it remains hidden on smaller screens</li>
-                                    <li>The <code class="p-1">.d-block</code> class is used to make the element visible and displayed as a block-level element across all screen sizes, overriding any other display properties that may be applied</li>
+                                    <li>The <code class="p-1">.d-flex</code> class is used to apply flexbox behavior to
+                                        the container, allowing its children to be laid out in a flexible manner along a
+                                        specified axis</li>
+                                    <li>The <code class="p-1">.d-none</code> class is used to to hide the element from
+                                        display, effectively rendering it invisible on the webpage</li>
+                                    <li>The <code class="p-1">.d-lg-block</code> class is used to to make the element
+                                        visible and displayed as a block-level element only on large screens and above,
+                                        while it remains hidden on smaller screens</li>
+                                    <li>The <code class="p-1">.d-block</code> class is used to make the element visible
+                                        and displayed as a block-level element across all screen sizes, overriding any
+                                        other display properties that may be applied</li>
                                 </ul>
 
                                 <p>More information on the display properties will be provided in the <a
@@ -460,7 +475,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 content-center">
-                    <img class="footer-logo" src="../../img/icon/logo_small_light.svg" width="200px" alt="website logo"></a>
+                    <img class="footer-logo" src="../../img/icon/logo_small_light.svg" width="200px"
+                        alt="website logo"></a>
                 </div>
                 <div class="col-lg-8 col-md-12 d-none d-md-block">
                     <div class="d-flex flex-row flex-nowrap content-center">
@@ -478,8 +494,8 @@
                         </div>
                         <div class="d-flex flex-column px-5 py-5">
                             <p class="text-nowrap">Support Haze</p>
-                            <a class="text-nowrap pb-2">Sponsor on GitHub</a>
-                            <a class="text-nowrap pb-2">Sponsor on Patreon</a>
+                            <a class="text-nowrap pb-2" href="">Sponsor on GitHub</a>
+                            <a class="text-nowrap pb-2" href="">Sponsor on Patreon</a>
                             <a class="text-nowrap pb-2" href="https://buymeacoffee.com/serbanelyan
                             ">Buy me some coffee</a>
                         </div>
@@ -489,17 +505,17 @@
                     <div class="d-flex flex-row flex-wrap content-center">
                         <div class="d-flex flex-column px-5 py-5">
                             <p class="text-nowrap">Getting started</p>
-                            <a class="pb-2" href="../getting-started/introduction.html">Introduction</a>
-                            <a class="pb-2" href="../getting-started/installation.html">Installation</a>
-                            <a class="pb-2" href="../getting-started/support.html">Support</a>
+                            <a class="p-2" href="../getting-started/introduction.html">Introduction</a>
+                            <a class="p-2" href="../getting-started/installation.html">Installation</a>
+                            <a class="p-2" href="../getting-started/support.html">Support</a>
                             <p class="text-nowrap">Core concepts</p>
-                            <a class="pb-2" href="helpers-and-utilities.html">Helpers and Utilities</a>
-                            <a class="pb-2" href="responsive-design.html">Responsive Design</a>
-                            <a class="pb-2" href="dark-light-mode.html">Dark/ Light Mode</a>
+                            <a class="p-2" href="helpers-and-utilities.html">Helpers and Utilities</a>
+                            <a class="p-2" href="responsive-design.html">Responsive Design</a>
+                            <a class="p-2" href="dark-light-mode.html">Dark/ Light Mode</a>
                             <p class="text-nowrap">Support Haze</p>
-                            <a class="pb-2">Sponsor on GitHub</a>
-                            <a class="pb-2">Sponsor on Patreon</a>
-                            <a class="pb-2" href="https://buymeacoffee.com/serbanelyan
+                            <a class="p-2" href="">Sponsor on GitHub</a>
+                            <a class="p-2" href="">Sponsor on Patreon</a>
+                            <a class="p-2" href="https://buymeacoffee.com/serbanelyan
                             ">Buy me some coffee</a>
                         </div>
                     </div>
@@ -507,7 +523,7 @@
             </div>
             <p class="text-center pt-5 pb-0 m-0">
                 Designed and developed by <a href="https://serbanelyan.com/">SerbanElyan</a> using HazeCSS pre-release
-                1.0.1 &copy; 2024 HazeCSS
+                1.0.3 &copy; 2024 HazeCSS
             </p>
         </div>
     </footer>

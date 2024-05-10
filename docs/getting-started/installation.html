@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Getting Started | HazeCSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta title="HazeCSS | Modern development simplified">
+    <meta name="description"
+        content="HazeCSS is a powerfull, extensible and lightweight framework designed for modern platforms featuring ready-to-use components, flexible layout, and minimalistic styling.">
+    <meta name="keywords"
+        content="Frontend, Web, Graphic, Design, Development, HTML, CSS, JavaScript, jQuerry, Framework">
+    <meta name="author" content="Neghea Serban Elian">
+    <meta name="theme-color" content="#FFF" />
+
     <link rel="icon" type="image/x-icon" href="../../img/icon/favicon.svg" alt="website logo" height="16px">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
     <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
@@ -21,7 +30,7 @@
                         alt="website logo">
                     <img class="nav-logo d-light" src="../../img/icon/logo_large_dark.svg" width="48px"
                         alt="website logo"></a>
-                <button id="nav-toggle" class="nav-toggle">
+                <button id="nav-toggle" class="nav-toggle" aria-label="menu">
                     <span class="nav-toggle-icon"></span>
                 </button>
             </div>
@@ -32,15 +41,13 @@
                     <a class="nav-link" href="../../demo/index.html">Demo</a>
                     <a class="nav-link" href="../../downloads.html">Downloads</a>
                     <a class="nav-icon d-dark" href="https://github.com/serbanelyan/hazecss"><img
-                        src="../../img/icon/git_light.svg" width="36px" alt="Git"></a>
-                <a class="nav-icon d-light" href="https://github.com/serbanelyan/hazecss"><img
-                        src="../../img/icon/git_dark.svg" width="36px" alt="Git"></a>
-                <a class="nav-icon d-dark" href="https://buymeacoffee.com/serbanelyan
-                "><img src="../../img/icon/coffee_light.svg" width="36px"
-                        alt="Donate"></a>
-                <a class="nav-icon d-light" href="https://buymeacoffee.com/serbanelyan
-                "><img src="../../img/icon/coffee_dark.svg" width="36px"
-                        alt="Donate"></a>
+                            src="../../img/icon/git_light.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-light" href="https://github.com/serbanelyan/hazecss"><img
+                            src="../../img/icon/git_dark.svg" width="36px" alt="Git"></a>
+                    <a class="nav-icon d-dark" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_light.svg" width="36px" alt="Donate"></a>
+                    <a class="nav-icon d-light" href="https://buymeacoffee.com/serbanelyan
+                "><img src="../../img/icon/coffee_dark.svg" width="36px" alt="Donate"></a>
                 </div>
             </div>
         </div>
@@ -142,11 +149,11 @@
                         <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
                             scroll-into-view="true" scroll-offset="62">
                             <div class="breadcrumb bg-alt p-3" id="breadcrumb-menu-toggle">
-                                <button class="breadcrumb-menu-toggle">
+                                <button class="breadcrumb-menu-toggle" aria-label="breadcrumb menu">
                                     <span class="breadcrumb-menu-toggle-icon"></span>
                                 </button>
-                                <a class="breadcrumb-item">Getting Started</a>
-                                <a class="breadcrumb-item active">Installation</a>
+                                <div class="breadcrumb-item">Getting Started</div>
+                                <div class="breadcrumb-item active">Installation</div>
                             </div>
                             <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
                                 id="breadcrumb-collapse">
@@ -365,7 +372,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 content-center">
-                    <img class="footer-logo" src="../../img/icon/logo_small_light.svg" width="200px" alt="website logo"></a>
+                    <img class="footer-logo" src="../../img/icon/logo_small_light.svg" width="200px"
+                        alt="website logo"></a>
                 </div>
                 <div class="col-lg-8 col-md-12 d-none d-md-block">
                     <div class="d-flex flex-row flex-nowrap content-center">
@@ -377,14 +385,17 @@
                         </div>
                         <div class="d-flex flex-column px-5 py-5">
                             <p class="text-nowrap">Core concepts</p>
-                            <a class="text-nowrap pb-2" href="../core-concepts/helpers-and-utilities.html">Helpers and Utilities</a>
-                            <a class="text-nowrap pb-2" href="../core-concepts/responsive-design.html">Responsive Design</a>
-                            <a class="text-nowrap pb-2" href="../core-concepts/dark-light-mode.html">Dark/ Light Mode</a>
+                            <a class="text-nowrap pb-2" href="../core-concepts/helpers-and-utilities.html">Helpers and
+                                Utilities</a>
+                            <a class="text-nowrap pb-2" href="../core-concepts/responsive-design.html">Responsive
+                                Design</a>
+                            <a class="text-nowrap pb-2" href="../core-concepts/dark-light-mode.html">Dark/ Light
+                                Mode</a>
                         </div>
                         <div class="d-flex flex-column px-5 py-5">
                             <p class="text-nowrap">Support Haze</p>
-                            <a class="text-nowrap pb-2">Sponsor on GitHub</a>
-                            <a class="text-nowrap pb-2">Sponsor on Patreon</a>
+                            <a class="text-nowrap pb-2" href="">Sponsor on GitHub</a>
+                            <a class="text-nowrap pb-2" href="">Sponsor on Patreon</a>
                             <a class="text-nowrap pb-2" href="https://buymeacoffee.com/serbanelyan
                             ">Buy me some coffee</a>
                         </div>
@@ -394,17 +405,17 @@
                     <div class="d-flex flex-row flex-wrap content-center">
                         <div class="d-flex flex-column px-5 py-5">
                             <p class="text-nowrap">Getting started</p>
-                            <a class="pb-2" href="introduction.html">Introduction</a>
-                            <a class="pb-2" href="installation.html">Installation</a>
-                            <a class="pb-2" href="support.html">Support</a>
+                            <a class="p-2" href="introduction.html">Introduction</a>
+                            <a class="p-2" href="installation.html">Installation</a>
+                            <a class="p-2" href="support.html">Support</a>
                             <p class="text-nowrap">Core concepts</p>
-                            <a class="pb-2" href="../core-concepts/helpers-and-utilities.html">Helpers and Utilities</a>
-                            <a class="pb-2" href="../core-concepts/responsive-design.html">Responsive Design</a>
-                            <a class="pb-2" href="../core-concepts/dark-light-mode.html">Dark/ Light Mode</a>
+                            <a class="p-2" href="../core-concepts/helpers-and-utilities.html">Helpers and Utilities</a>
+                            <a class="p-2" href="../core-concepts/responsive-design.html">Responsive Design</a>
+                            <a class="p-2" href="../core-concepts/dark-light-mode.html">Dark/ Light Mode</a>
                             <p class="text-nowrap">Support Haze</p>
-                            <a class="pb-2">Sponsor on GitHub</a>
-                            <a class="pb-2">Sponsor on Patreon</a>
-                            <a class="pb-2" href="https://buymeacoffee.com/serbanelyan
+                            <a class="p-2" href="">Sponsor on GitHub</a>
+                            <a class="p-2" href="">Sponsor on Patreon</a>
+                            <a class="p-2" href="https://buymeacoffee.com/serbanelyan
                             ">Buy me some coffee</a>
                         </div>
                     </div>

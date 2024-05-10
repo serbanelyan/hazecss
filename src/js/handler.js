@@ -106,9 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
         calculateWidth();
 
         document.getElementById('sm').addEventListener('click', function () {
-            if (window.innerWidth > 1400)
+            if (window.innerWidth > 1260)
                 rangeInput.value = 48;
-            else if (window.innerWidth < 1200)
+            else if (window.innerWidth < 1100)
                 rangeInput.value = 62;
             else rangeInput.value = 55;
 
@@ -116,9 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         document.getElementById('md').addEventListener('click', function () {
-            if (window.innerWidth > 1400)
+            if (window.innerWidth > 1260)
                 rangeInput.value = 64;
-            else if (window.innerWidth < 1200)
+            else if (window.innerWidth < 1100)
                 rangeInput.value = 84;
             else
                 rangeInput.value = 74;
