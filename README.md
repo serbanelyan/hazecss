@@ -9,8 +9,8 @@
 
 There are several quick start options available:
 
-- [Download the latest release](https://github.com/serbanelyan/hazecss/archive/refs/heads/main.zip)
-- Use the `jsDelivr CND`: [Haze Base](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze.min.css); [Haze Plus](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze-plus.min.css); [Haze Plus Plus](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze-plus-plus.min.css)
+- [Download the latest release](https://github.com/serbanelyan/hazecss/archive/refs/heads/main.zip) from GitHub
+- Use the `jsDelivr CDN`: [Haze Base](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze.min.css) / [Haze Plus](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze-plus.min.css) / [Haze Plus Plus](https://cdn.jsdelivr.net/gh/serbanelyan/hazecss@main/src/css/haze/haze-plus-plus.min.css)
 - Clone the repo: `git clone https://github.com/serbanelyan/hazecss.git`
 
 You might want to have a look at the [getting started](hazecss.com/docs/getting-started/introduction.html) section of the documentation.
