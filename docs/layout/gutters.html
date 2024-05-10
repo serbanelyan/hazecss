@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Layout | HazeCSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta title="HazeCSS | Modern development simplified">
+    <meta name="description"
+        content="HazeCSS is a powerfull, extensible and lightweight framework designed for modern platforms featuring ready-to-use components, flexible layout, and minimalistic styling.">
+    <meta name="keywords"
+        content="Frontend, Web, Graphic, Design, Development, HTML, CSS, JavaScript, jQuerry, Framework">
+    <meta name="author" content="Neghea Serban Elian">
+    <meta name="theme-color" content="#FFF" />
+
     <link rel="icon" type="image/x-icon" href="../../img/icon/favicon.svg" alt="website logo" height="16px">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../../src/css/haze/haze-plus.css">
     <link rel="stylesheet" href="../../src/css/haze/haze-plus-plus.css">
@@ -21,7 +30,7 @@
                         alt="website logo">
                     <img class="nav-logo d-light" src="../../img/icon/logo_large_dark.svg" width="48px"
                         alt="website logo"></a>
-                <button id="nav-toggle" class="nav-toggle">
+                <button id="nav-toggle" class="nav-toggle" aria-label="menu">
                     <span class="nav-toggle-icon"></span>
                 </button>
             </div>
@@ -142,11 +151,11 @@
                         <div class="container sticky-top d-md-none px-0" id="breadcrumb-container"
                             scroll-into-view="true" scroll-offset="62">
                             <div class="breadcrumb bg-alt p-3" id="breadcrumb-menu-toggle">
-                                <button class="breadcrumb-menu-toggle">
+                                <button class="breadcrumb-menu-toggle" aria-label="breadcrumb menu">
                                     <span class="breadcrumb-menu-toggle-icon"></span>
                                 </button>
-                                <a class="breadcrumb-item">Layout</a>
-                                <a class="breadcrumb-item active">Gutters</a>
+                                <div class="breadcrumb-item">Layout</div>
+                                <div class="breadcrumb-item active">Gutters</div>
                             </div>
                             <div class="breadcrumb-menu breadcrumb-collapse collapsed bg-alt p-3"
                                 id="breadcrumb-collapse">
@@ -572,7 +581,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 content-center">
-                        <img class="footer-logo" src="../../img/placeholder_light.png" width="200px"
+                        <img class="footer-logo" src="../../img/miscellaneous/placeholder_light.png" width="200px"
                             alt="website logo"></a>
                     </div>
                     <div class="col-lg-8 col-md-12 d-none d-md-block">

@@ -1,3 +1,22 @@
+## 1.0.3
+
+# Features
+
+# Improvements
+
+- Added `@media (hover: hover)` to all hover declarations in order to prevent `:hover` effects on mobile devices
+- Improved various accessibility aspects in relation with the contrast ratio of links, text and buttons
+- Improved the consistency between the light and dark mode with regard to the color of links, text and buttons
+- Extended the support for `.bg-*` classes to make it possible to apply these on child elements directly
+- Removed unused `--code-*` variables from the `plus` and `plus plus` stylesheets
+- Updated the download page with links to `jsDelivr` content delivery network
+- Updated the arrow icon for the select input on both dark and light modes
+
+# Bugfixes
+
+- Fixed the `xl` and `xxl` breakpoints that were defined for multiple widths (1400 and 1260; 1200 and 1100)
+- Fixed the overlap between `min-width` and `max-width` media querries
+
 ## 1.0.2
 
 # Features

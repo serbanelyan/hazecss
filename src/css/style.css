@@ -1,3 +1,77 @@
+:root,
+.bg-auto *,
+.bg-light * {
+    --code: #333;
+    --code-punctuation: #333;
+    --code-element: #0057A3;
+    --code-attr-name: #00b7ff;
+    --code-attr-value: #ff6600;
+    --code-class: #ffae00;
+    --code-value: #00d62e;
+    --code-media: #b930c0;
+
+    --code-close: #ff5f58;
+    --code-minimize: #ffbd2e;
+    --code-fullscreen: #28ca42;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root,
+    .bg-auto * {
+        --code: #dbdbdb;
+        --code-punctuation: #dbdbdb;
+        --code-element: #0f93ff;
+        --code-attr-name: #00b7ff;
+        --code-attr-value: #ff9130;
+        --code-class: #ffce65;
+        --code-value: #acf0bb;
+        --code-media: #d941e2;
+
+        --code-close: #ff5f58;
+        --code-minimize: #ffbd2e;
+        --code-fullscreen: #28ca42;
+    }
+}
+
+.bg-reverse *,
+.bg-dark * {
+    --code: #dbdbdb;
+    --code-punctuation: #dbdbdb;
+    --code-element: #0f93ff;
+    --code-attr-name: #00b7ff;
+    --code-attr-value: #ff9130;
+    --code-class: #ffce65;
+    --code-value: #acf0bb;
+    --code-media: #d941e2;
+
+    --code-close: #ff5f58;
+    --code-minimize: #ffbd2e;
+    --code-fullscreen: #28ca42;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bg-reverse * {
+        --code: #333;
+        --code-punctuation: #333;
+        --code-element: #0057A3;
+        --code-attr-name: #00b7ff;
+        --code-attr-value: #ff6600;
+        --code-class: #ffae00;
+        --code-value: #00d62e;
+        --code-media: #b930c0;
+
+        --code-close: #ff5f58;
+        --code-minimize: #ffbd2e;
+        --code-fullscreen: #28ca42;
+    }
+}
+
+.framework {
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
 .heading {
     font-weight: bolder !important;
     opacity: 0.5 !important;
@@ -76,10 +150,6 @@
 #haze-responsive-range input[type='range'] {
     width: 100%;
 }
-/* 
-input {
-    box-sizing: border-box;
-} */
 
 #haze-responsive-demo .code-content {
     overflow-y: scroll;
@@ -202,7 +272,7 @@ input {
 
 .bg-abstract {
     clip: rect(0, auto, auto, 0);
-    background-image: url('../../img/background/1-05.jpg');
+    background-image: url('../../img/background/1-05_min.webp');
     background-size: cover;
     background-position: center center;
     position: absolute;
@@ -242,7 +312,7 @@ figure {
 }
 
 #fixed {
-    background-image: url('../../img/background/1-05.jpg');
+    background-image: url('../../img/background/1-05_min.webp');
     position: fixed;
     display: block;
     top: 0;
@@ -355,4 +425,103 @@ figure {
 
 #breadcrumb-container.sticky-top {
     top: 60px;
+}
+
+
+span.code {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 16px;
+}
+
+div.code-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.code-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.code-header {
+    background-color: var(--background-alt) !important;
+}
+
+.code-snippet {
+    background-color: var(--background-main) !important;
+}
+
+.code-container {
+    background-color: var(--background) !important;
+}
+
+.code-header-container {
+    padding: 5px;
+}
+
+.code-header .button {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+.code-header .close {
+    background: var(--code-close);
+}
+
+.code-header .minimize {
+    background: var(--code-minimize);
+}
+
+.code-header .fullscreen {
+    background: var(--code-fullscreen);
+}
+
+span.code.punctuation {
+    color: var(--code-punctuation);
+}
+
+span.code.element {
+    color: var(--code-element);
+}
+
+span.code.attr-name {
+    color: var(--code-attr-name);
+}
+
+span.code.attr-value {
+    color: var(--code-attr-value);
+}
+
+span.code.class {
+    color: var(--code-class);
+}
+
+span.code.value {
+    color: var(--code-value);
+}
+
+span.code.media {
+    color: var(--code-media);
+}
+
+span.code.text {
+    color: var(--text-main);
+}
+
+.link {
+    color: var(--link);
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--link-hover);
 }

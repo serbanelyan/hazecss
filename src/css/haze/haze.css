@@ -1,5 +1,5 @@
 /*
- * Haze v1.0.2 (https://hazecss.com/)
+ * Haze v1.0.3 (https://hazecss.com/)
  * Developed by Serban Elyan (https://serbanelyan.com/)
  * Git (https://github.com/serbanelyan/hazecss)
  */
@@ -12,8 +12,10 @@
 :root {
     --magenta: #ff00ff;
 
-    --accent: #3d97db;
-    --accent-alt: #005291;
+    --accent: #0074cc;
+    --accent-hover: #0f93ff;
+    --accent-alt: #00599e;
+    --accent-alt-hover: #0074cc;
 
     --background: #ddd;
     --background-main: #fff;
@@ -23,7 +25,7 @@
     --text-main: #333;
     --text-bright: #000;
     --text-dark: #fff;
-    --text-muted: #777;
+    --text-muted: #595959;
 
     --scrollbar-thumb: var(--background);
     --scrollbar-thumb-hover: var(--button-hover);
@@ -32,9 +34,9 @@
     --button-base: #eee;
     --button-hover: #ddd;
 
-    --link: #0091ff;
-    --link-hover: #006fc4;
-    --link-visited: #0091ff;
+    --link: #0f93ff;
+    --link-hover: #0074cc;
+    --link-visited: #0f93ff;
 
     --variable: #008a55;
     --highlight: #ffff00;
@@ -48,15 +50,17 @@
     --animation-duration: 0.1s;
     --page-width: 1000px;
 
-    --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+    --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23161f27'/%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --magenta: #ff00ff;
 
-        --accent: #3d97db;
-        --accent-alt: #003863;
+        --accent: #0074cc;
+        --accent-hover: #0f93ff;
+        --accent-alt: #00599e;
+        --accent-alt-hover: #0074cc;
 
         --background: #161f27;
         --background-main: #202b38;
@@ -75,8 +79,9 @@
         --button-base: #161f27;
         --button-hover: #040a0f;
 
-        --link: #0091ff;
-        --link-hover: #006fc4;
+        --link: #0f93ff;
+        --link-hover: #0074cc;
+        --link-visited: #0f93ff;
 
         --variable: #d941e2;
         --highlight: #efdb43;
@@ -90,7 +95,7 @@
         --animation-duration: 0.1s;
         --page-width: 1000px;
 
-        --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+        --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' %3E%3Cpath d='M249.99 388.76c-7.53 0-14.85-3.74-22.39-11.43-70.89-72.31-141.77-144.62-212.64-216.95-7.22-7.37-10.49-16.86-8.98-26.06 1.41-8.57 6.9-15.86 15.06-20.01 4.01-2.03 8.15-3.07 12.3-3.07 6.14 0 12.12 2.22 17.75 6.6 1.85 1.44 3.35 3 4.67 4.37.27.29.55.57.83.85 64.92 66.29 128.58 131.28 193.37 197.5 58.89-60.14 122.21-124.75 193.54-197.48 2.03-2.07 4.8-4.89 8.13-7.14 4.49-3.03 9.76-4.63 15.24-4.63 8.04 0 15.52 3.41 20.53 9.36 9.26 11 9.28 26.19.05 36.94-1.48 1.72-2.98 3.26-4.44 4.74l-.32.33c-70.14 71.57-140.28 143.13-210.42 214.69-7.5 7.65-14.8 11.37-22.31 11.37Z' fill='%23efefef'/%3E%3C/svg%3E");
     }
 }
 
@@ -226,11 +231,13 @@ button {
     }
 }
 
-button:hover {
-    background: var(--button-hover);
+@media (hover: hover) {
+    button:hover {
+        background: var(--button-hover);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
     button:hover {
         background: var(--button-hover);
     }
@@ -493,13 +500,16 @@ input[type='button'] {
     }
 }
 
-input[type='submit']:hover,
-input[type='reset']:hover,
-input[type='button']:hover {
-    background: var(--button-hover);
+@media (hover: hover) {
+
+    input[type='submit']:hover,
+    input[type='reset']:hover,
+    input[type='button']:hover {
+        background: var(--button-hover);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
 
     input[type='submit']:hover,
     input[type='reset']:hover,
@@ -573,6 +583,8 @@ select {
         background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
     }
 }
+
+
 
 select::-ms-expand {
     display: none;
@@ -798,7 +810,7 @@ input[type='range']:focus::-ms-fill-lower {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--link);
 }
 
@@ -808,9 +820,11 @@ a {
     }
 }
 
-a:hover {
-    color: var(--link-hover);
-    cursor: pointer !important;
+@media (hover: hover) {
+    a:hover {
+        color: var(--link-hover);
+        cursor: pointer !important;
+    }
 }
 
 a:visited {
@@ -818,9 +832,11 @@ a:visited {
     cursor: pointer !important;
 }
 
-a:visited:hover {
-    color: var(--link-hover);
-    cursor: pointer !important;
+@media (hover: hover) {
+    a:visited:hover {
+        color: var(--link-hover);
+        cursor: pointer !important;
+    }
 }
 
 code {
@@ -1007,11 +1023,13 @@ tbody tr:nth-child(even) button {
     }
 }
 
-tbody tr:nth-child(even) button:hover {
-    background-color: var(--background-body);
+@media (hover: hover) {
+    tbody tr:nth-child(even) button:hover {
+        background-color: var(--background-body);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
     tbody tr:nth-child(even) button:hover {
         background-color: var(--background-body);
     }
@@ -1044,11 +1062,13 @@ tbody tr:nth-child(even) button:hover {
     }
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-thumb-hover);
+@media (hover: hover) {
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollbar-thumb-hover);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (hover: hover) {
     ::-webkit-scrollbar-thumb:hover {
         background: var(--scrollbar-thumb-hover);
     }
@@ -1198,22 +1218,7 @@ body>footer {
     margin-top: 40px;
 }
 
-
-input, form {
+input,
+form {
     box-sizing: border-box;
 }
-
-/* Extra small (xs) devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small (sm) devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {} */
-
-/* Medium (md) devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {} */
-
-/* Large (lg) devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {} */
-
-/* Extra (xl) large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {} */
